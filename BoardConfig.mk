@@ -54,7 +54,6 @@ TARGET_KERNEL_CONFIG := lineageos_RMX1851_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm710
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno616
 
 # Assert
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt

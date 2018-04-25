@@ -17,5 +17,6 @@ genfscon proc /oppoVersion                                                 u:obj
 genfscon proc /touchpanel                                                  u:object_r:proc_touchpanel:s0
 
 # Sched
+genfscon proc /sys/kernel/sched_autogroup_enabled                          u:object_r:proc_sysctl_autogroup:s0
 genfscon proc /sys/kernel/sched_upmigrate                                  u:object_r:proc_sched:s0
 genfscon proc /sys/kernel/sched_downmigrate                                u:object_r:proc_sched:s0

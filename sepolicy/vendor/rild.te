@@ -6,3 +6,6 @@ allow rild nv_data_file:dir { getattr search write create add_name };
 allow rild nv_data_file:file { read write create open };
 
 set_prop(rild, vendor_radio_prop)
+
+#Fix no service problem
+binder_call(rild, qtidataservices_app)

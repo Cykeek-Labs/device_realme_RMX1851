@@ -1,1 +1,21 @@
 get_prop(dataservice_app, vendor_radio_prop)
+
+# For WFC call(RAT change into IWLAN)
+binder_call(cnd, qtidataservices_app)
+
+app_domain(qtidataservices_app)
+net_domain(qtidataservices_app)
+
+add_hwservice(qtidataservices_app, hal_cacert_hwservice)
+hwbinder_use(qtidataservices_app)
+
+allow qtidataservices_app hal_datafactory_hwservice:hwservice_manager find;
+allow qtidataservices_app hal_iwlan_hwservice:hwservice_manager find;
+allow qtidataservices_app radio_service:service_manager find;
+allow qtidataservices_app app_api_service :service_manager find;
+
+allow qtidataservices_app self:qipcrtr_socket create_socket_perms_no_ioctl;
+allow qtidataservices_app radio_data_file:dir r_dir_perms;
+
+binder_call(qtidataservices_app, cnd)
+binder_call(qtidataservices_app, rild)

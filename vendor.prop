@@ -52,6 +52,9 @@ persist.camera.light_ae.enable=1
 persist.vendor.camera.dualcamera_bokeh=1
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
 
+# Charger
+ro.charger.enable_suspend=true
+
 # CNE
 persist.vendor.cne.feature=1
 

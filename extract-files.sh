@@ -48,6 +48,16 @@ if [ -z "${SRC}" ]; then
     SRC=adb
 fi
 
+# Load camera config from vendor
+function blob_fixup() {
+    case "${1}" in
+
+    vendor/lib/hw/camera.qcom.so | vendor/lib64/hw/camera.qcom.so)
+         sed -i "s|/oppo_product/vendor_overlay/0/etc/camera/oppo_camera_config.xml|//////vendor///////etc///////camera///////oppo_camera_config.xml|g" "${2}"
+        ;;
+    esac
+}
+
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" false "${CLEAN_VENDOR}"
 

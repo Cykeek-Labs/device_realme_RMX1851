@@ -28,6 +28,9 @@
 # Power supply
 /sys/devices/platform/soc/[a-z0-9]+.qcom,spmi/spmi-[0-9]/spmi[0-9]-0[0-9]/[a-z0-9]+.qcom,spmi:qcom,[a-z0-9]+@[0-9]:qcom,qpnp-smb2/power_supply/ac(/.*)?  u:object_r:sysfs_battery_supply:s0
 
+# sde
+/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps                       u:object_r:sysfs_fps:s0
+
 # NV
 /data/opponvitems(/.*)?                                                                                 u:object_r:nv_data_file:s0
 /cache/opponvitems(/.*)?                                                                                u:object_r:nv_data_file:s0

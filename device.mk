@@ -176,6 +176,7 @@ PRODUCT_PACKAGES += \
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
+    devicesettings \
     RealmeParts
 
 # Display

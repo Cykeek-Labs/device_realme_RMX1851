@@ -706,7 +706,7 @@ service vendor.audio-hal-2-0 /vendor/bin/hw/android.hardware.audio@2.0-service
     #endif /* VENDOR_EDIT */
     capabilities BLOCK_SUSPEND SYS_NICE
     ioprio rt 4
-    writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks
+    task_profiles ProcessCapacityHigh HighPerformance
     # audioflinger restarts itself when it loses connection with the hal
     # and its .rc file has an "onrestart restart audio-hal" rule, thus
     # an additional auto-restart from the init process isn't needed.

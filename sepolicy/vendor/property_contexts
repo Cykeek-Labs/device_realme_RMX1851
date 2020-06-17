@@ -1,4 +1,6 @@
 # Audio
+audio.sys.noisy.broadcast.delay     u:object_r:vendor_audio_prop:s0
+audio.sys.offload.pstimeout.secs    u:object_r:vendor_audio_prop:s0
 persist.oppo.mm.pcmdump             u:object_r:vendor_audio_prop:s0
 sys.oppo.mm.record.type             u:object_r:vendor_audio_prop:s0
 sys.oppo.mm.voice.record            u:object_r:vendor_audio_prop:s0

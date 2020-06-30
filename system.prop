@@ -82,3 +82,6 @@ persist.data.iwlan.rekey=4294967295
 
 # WFD
 persist.sys.wfd.virtual=0
+
+# Zygote Preforking
+persist.device.config.runtime_native.uasp_pool_enabled=true

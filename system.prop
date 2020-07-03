@@ -15,6 +15,7 @@ persist.bluetooth.a2dp_offload.disabled=false
 persist.bluetooth.disableabsvol=true
 persist.bluetooth.disableinbandringing=false
 persist.bluetooth.specificatcmdsenable=true
+persist.vendor.bt.a2dp.aac_whitelist=false
 persist.vendor.btstack.enable.splita2dp=true
 persist.vendor.btstack.enable.twsplus=true
 persist.vendor.btstack.enable.twsplussho=true

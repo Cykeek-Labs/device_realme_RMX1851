@@ -12,3 +12,6 @@ genfscon proc /oppoVersion                                                 u:obj
 
 # Touchpanel
 genfscon proc /touchpanel                                                  u:object_r:proc_touchpanel:s0
+
+# Oppo display
+genfscon proc /sys/kernel/oppo_display/panel_id                            u:object_r:oppo_display_proc:s0

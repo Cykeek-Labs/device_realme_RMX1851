@@ -3,6 +3,9 @@
 /vendor/bin/hw/vendor\.oppo\.hardware\.camera\.oppoAlgoProcessService@1\.0-service                      u:object_r:hal_camera_default_exec:s0
 /vendor/bin/hw/vendor\.oppo\.hardware\.ktv@1\.0-service                                                 u:object_r:hal_camera_default_exec:s0
 
+# Block devices
+/dev/block/bootdevice/by-name/persist                                                                   u:object_r:persist_block_device:s0
+
 # CryptoEng
 /vendor/bin/hw/vendor\.oppo\.hardware\.cryptoeng@1\.0-service                                           u:object_r:hal_cryptoeng_default_exec:s0
 

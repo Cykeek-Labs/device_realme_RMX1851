@@ -192,9 +192,6 @@ on boot
     # Create hvdcp_opti directory
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
 
-    # Update touchscreen firmware
-    write /proc/touchpanel/tp_fw_update 1
-
     # Sensors log dir
     mkdir /data/vendor/sensors
     chown system system /data/vendor/sensors

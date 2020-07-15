@@ -6,9 +6,6 @@ on boot
     # fastchg firmware
     chown system system /proc/fastchg_fw_update
 
-    # OTG
-    write /sys/class/power_supply/usb/otg_switch 1
-
     # Touchpanel
     chmod 0660 /proc/touchpanel/oppo_tp_direction
     chmod 0660 /proc/touchpanel/oppo_tp_limit_enable
@@ -42,3 +39,8 @@ on boot
 on charger
     setprop service.bootanim.exit 1
     trigger late-init
+
+on init
+    # OTG
+    chown system system /sys/class/power_supply/usb/otg_switch
+    chmod 0664 /sys/class/power_supply/usb/otg_switch

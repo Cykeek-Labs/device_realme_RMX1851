@@ -16,9 +16,9 @@
     <string name="device_summary">Adjust Realme specific device settings</string>
     <string name="display_title">Display</string>
     <!-- game mode -->
-    <string name="game_mode_summary">Boost Touch Sampling Rate</string>
+    <string name="game_mode_summary">Boost Touch Sampling Rate and also enables DND mode for uninterrupted game play</string>
     <string name="game_mode_title">Game mode</string>
-    <string name="tile_game_mode">game mode</string>
+    <string name="tile_game_mode">Game mode</string>
     <!-- fps info -->
     <string name="fps_info_title">FPS overlay</string>
     <string name="fps_info_summary">Show overlay with current frames per second</string>

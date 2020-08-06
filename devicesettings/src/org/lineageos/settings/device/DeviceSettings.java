@@ -19,7 +19,9 @@ package org.lineageos.settings.device;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.NotificationManager;
 import android.content.ComponentName;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.content.Intent;
@@ -38,7 +40,6 @@ import androidx.preference.PreferenceManager;
 import androidx.preference.SwitchPreference;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
-import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceGroup;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.TwoStatePreference;
@@ -55,6 +56,7 @@ public class DeviceSettings extends PreferenceFragment
 
     private static TwoStatePreference mGameModeSwitch;
     private static SwitchPreference mFpsInfo;
+    private static NotificationManager mNotificationManager;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -65,7 +67,7 @@ public class DeviceSettings extends PreferenceFragment
         mGameModeSwitch = (TwoStatePreference) findPreference(KEY_GAME_SWITCH);
         mGameModeSwitch.setEnabled(GameModeSwitch.isSupported());
         mGameModeSwitch.setChecked(GameModeSwitch.isCurrentlyEnabled(this.getContext()));
-        mGameModeSwitch.setOnPreferenceChangeListener(new GameModeSwitch());
+        mGameModeSwitch.setOnPreferenceChangeListener(new GameModeSwitch(getContext()));
 
         mFpsInfo = (SwitchPreference) findPreference(KEY_FPS_INFO);
         mFpsInfo.setChecked(prefs.getBoolean(KEY_FPS_INFO, false));

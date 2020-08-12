@@ -299,6 +299,10 @@ $(call inherit-product, packages/apps/RealmeParts/parts.mk)
 PRODUCT_COPY_FILES += \
     packages/apps/RealmeParts/init/cabc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cabc.rc
 
+# Perfd (dummy)
+PRODUCT_PACKAGES += \
+    libqti-perfd-client
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.RMX1851-libperfmgr

@@ -36,6 +36,9 @@ persist.vendor.fingerprint.optical.support u:object_r:oppo_fp_prop:s0
 # Keybox
 sys.oppo.bsp.drm.                   u:object_r:cryptoeng_prop:s0
 
+# Perf
+perf_profile                        u:object_r:vendor_perf_prop:s0
+
 # RIL
 gsm.operator.numeric                u:object_r:vendor_radio_prop:s0
 oppo.device.imeicache               u:object_r:vendor_radio_prop:s0

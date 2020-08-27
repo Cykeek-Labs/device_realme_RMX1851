@@ -22,6 +22,7 @@ import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.SystemProperties;
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
 import androidx.preference.PreferenceManager;
@@ -69,6 +70,7 @@ public class GameModeTileService extends TileService {
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
         enabled = GameModeSwitch.isCurrentlyEnabled(this);
         Utils.writeValue(GameModeSwitch.getFile(), enabled ? "0" : "1");
+        SystemProperties.set("perf_profile", enabled ? "0" : "1" );
         GameModeTileDND();
         sharedPrefs.edit().putBoolean(DeviceSettings.KEY_GAME_SWITCH, enabled ? false : true).commit();
         getQsTile().setState(enabled ? Tile.STATE_INACTIVE : Tile.STATE_ACTIVE);

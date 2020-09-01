@@ -16,11 +16,13 @@
         android:title="@string/display_title">
 
         <SwitchPreference
+            android:icon="@drawable/game_mode_icon"
             android:key="game"
             android:summary="@string/game_mode_summary"
             android:title="@string/game_mode_title" />
 
         <SwitchPreference
+            android:icon="@drawable/fps_info_icon"
             android:key="fps_info"
             android:title="@string/fps_info_title"
             android:summary="@string/fps_info_summary"

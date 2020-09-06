@@ -15,6 +15,7 @@
     <string name="device_title">Realme Settings</string>
     <string name="device_summary">Adjust Realme specific device settings</string>
     <string name="display_title">Display</string>
+    <string name="misc_title">Misc settings</string>
     <!-- game mode -->
     <string name="game_mode_summary">Boost Touch Sampling Rate, enables performance mode and also enables DND mode for uninterrupted game play</string>
     <string name="game_mode_title">Game mode</string>

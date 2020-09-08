@@ -1,1 +1,2 @@
 allow init shell_data_file:file { getattr setattr };
+allow init oppo_ver_proc:file { read open getattr };

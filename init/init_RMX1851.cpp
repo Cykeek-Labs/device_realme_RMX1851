@@ -55,11 +55,22 @@ void vendor_load_properties()
 
     char const *operator_name_file = "/proc/oppoVersion/operatorName";
     std::string build_epoch, build_fingerprint, device, operator_name;
-    build_epoch = "1594708134";
+    build_epoch = "1592204605";
 
     if (ReadFileToString(operator_name_file, &operator_name)) {
+        /* CHINA */
+        if ((Trim(operator_name) == "8")) {
+        device = "RMX1851CN";
+        build_fingerprint = "Realme/RMX1851/" + device + ":10/QKQ1.190918.001/" + build_epoch + ":user/release-keys";
+           property_override("ro.build.product", device.c_str());
+           for (const auto &source : ro_props_default_source_order) {
+               set_ro_build_prop(source, "fingerprint", build_fingerprint.c_str());
+               set_ro_product_prop(source, "device", device.c_str());
+               set_ro_product_prop(source, "model", "RMX1851");
+           }
+           property_set("ro.separate.soft", "18637");
         /* FOREIGN */
-        if ((Trim(operator_name) == "30")) {
+        } else if ((Trim(operator_name) == "30")) {
         device = "RMX1851";
         build_fingerprint = "Realme/RMX1851/" + device + ":10/QKQ1.190918.001/" + build_epoch + ":user/release-keys";
            property_override("ro.build.product", device.c_str());

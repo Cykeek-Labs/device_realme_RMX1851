@@ -80,6 +80,8 @@ void vendor_load_properties()
                set_ro_product_prop(source, "model", device.c_str());
            }
            property_set("ro.separate.soft", "18623");
+           property_set("ro.com.google.clientidbase.cr", "android-oppo");
+           property_set("ro.com.google.clientidbase.ms", "android-oppo");
         /* FOREIGN INDIA */
         } else if ((Trim(operator_name) == "31")) {
         device = "RMX1851";
@@ -91,6 +93,8 @@ void vendor_load_properties()
                set_ro_product_prop(source, "model", device.c_str());
            }
            property_set("ro.separate.soft", "18621");
+           property_set("ro.com.google.clientidbase.cr", "android-oppo");
+           property_set("ro.com.google.clientidbase.ms", "android-oppo");
         /* VIETNAM_128GB */
         } else if ((Trim(operator_name) == "32")) {
         device = "RMX1853";
@@ -103,6 +107,8 @@ void vendor_load_properties()
                set_ro_product_prop(source, "model", device.c_str());
            }
            property_set("ro.separate.soft", "18625");
+           property_set("ro.com.google.clientidbase.cr", "android-oppo");
+           property_set("ro.com.google.clientidbase.ms", "android-oppo");
         /* VIETNAM_64GB */
         } else if ((Trim(operator_name) == "33")) {
         device = "RMX1855";
@@ -115,6 +121,8 @@ void vendor_load_properties()
                set_ro_product_prop(source, "model", device.c_str());
            }
            property_set("ro.separate.soft", "18627");
+           property_set("ro.com.google.clientidbase.cr", "android-oppo");
+           property_set("ro.com.google.clientidbase.ms", "android-oppo");
         /* FOREIGN EUROPE*/
         } else if ((Trim(operator_name) == "34")) {
         device = "RMX1851";
@@ -126,6 +134,8 @@ void vendor_load_properties()
                set_ro_product_prop(source, "model", device.c_str());
            }
            property_set("ro.separate.soft", "18633");
+           property_set("ro.com.google.clientidbase.cr", "android-oppo");
+           property_set("ro.com.google.clientidbase.ms", "android-oppo");
         } else {
         LOG(ERROR) << "Unsupported variant";
         }

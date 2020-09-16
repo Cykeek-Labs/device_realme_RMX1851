@@ -1,11 +1,12 @@
 Copyright (C) 2019 The LineageOS Project
 
-Device configuration for realme 3 Pro
+Device configuration for realme 3 Pro/X Lite
 =========================================
 
-The realme 3 Pro (codenamed _"RMX1851"_) is a mid-range smartphone from realme.
+The realme 3 Pro/X Lite (codenamed _"RMX1851"_) is a mid-range smartphone from realme.
 
-It was announced in April 2019 and released in May 2019.
+realme 3 Pro was announced in April 2019 and released in May 2019.
+realme X Lite was announced in May 2019 and released in May 2019.
 
 ## Device specifications
 
@@ -24,4 +25,4 @@ Front Camera  | 25 MP (S5K2X5, f/2.0, 1/2.8", 0.9µm)
 
 ## Device picture
 
-![realme 3 Pro](https://static.realme.net/page/realme-3-pro/images/mo/specs-black-e5e1855f6b.jpg "Oppo Realme 3 Pro in black")
+![realme 3 Pro/X Lite](https://static.realme.net/page/realme-3-pro/images/mo/specs-black-e5e1855f6b.jpg "Realme 3 Pro/X Lite in black")

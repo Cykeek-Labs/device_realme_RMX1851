@@ -177,8 +177,9 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 # Security patch level
 VENDOR_SECURITY_PATCH := 2020-09-05
 
-# Sepolicy
-include device/qcom/sepolicy/sepolicy.mk
+# SELinux
+include device/qcom/sepolicy_vndr/SEPolicy.mk
+
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # System-as-root

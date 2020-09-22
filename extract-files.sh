@@ -51,7 +51,9 @@ fi
 # Load camera config from vendor
 function blob_fixup() {
     case "${1}" in
-
+    product/lib64/libdpmframework.so)
+        patchelf --add-needed "libshim_dpmframework.so" "${2}"
+        ;;
     vendor/lib/hw/camera.qcom.so | vendor/lib64/hw/camera.qcom.so)
          sed -i "s|/oppo_product/vendor_overlay/0/etc/camera/oppo_camera_config.xml|//////vendor///////etc///////camera///////oppo_camera_config.xml|g" "${2}"
         ;;

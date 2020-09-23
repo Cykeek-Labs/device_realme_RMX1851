@@ -55,7 +55,7 @@ void vendor_load_properties()
 
     char const *operator_name_file = "/proc/oppoVersion/operatorName";
     std::string build_epoch, build_fingerprint, device, operator_name;
-    build_epoch = "1592204605";
+    build_epoch = "1597290604";
 
     if (ReadFileToString(operator_name_file, &operator_name)) {
         /* CHINA */
@@ -99,7 +99,7 @@ void vendor_load_properties()
         } else if ((Trim(operator_name) == "32")) {
         device = "RMX1853";
         build_fingerprint = "Realme/RMX1853/" + device + ":10/QKQ1.190918.001/" + build_epoch + ":user/release-keys";
-           property_override("ro.build.description", "RMX1853-user 10 QKQ1.190918.001 1590390095 release-keys");
+           property_override("ro.build.description", "RMX1853-user 10 QKQ1.190918.001 1597290604 release-keys");
            property_override("ro.build.product", device.c_str());
            for (const auto &source : ro_props_default_source_order) {
                set_ro_build_prop(source, "fingerprint", build_fingerprint.c_str());
@@ -113,7 +113,7 @@ void vendor_load_properties()
         } else if ((Trim(operator_name) == "33")) {
         device = "RMX1855";
         build_fingerprint = "Realme/RMX1855/" + device + ":10/QKQ1.190918.001/" + build_epoch + ":user/release-keys";
-           property_override("ro.build.description", "RMX1855-user 10 QKQ1.190918.001 1590390095 release-keys");
+           property_override("ro.build.description", "RMX1855-user 10 QKQ1.190918.001 1597290604 release-keys");
            property_override("ro.build.product", device.c_str());
            for (const auto &source : ro_props_default_source_order) {
                set_ro_build_prop(source, "fingerprint", build_fingerprint.c_str());

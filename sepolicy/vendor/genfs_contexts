@@ -1,3 +1,6 @@
+# Devinfo
+genfscon proc /devinfo                                                     u:object_r:proc_devinfo:s0
+
 # Fingerprint
 genfscon sysfs /devices/platform/soc/soc:fpc_fpc1020/irq                   u:object_r:sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/soc/soc:fpc_fpc1020/irq_enable            u:object_r:sysfs_fingerprint:s0
@@ -6,9 +9,6 @@ genfscon proc /fp_id                                                       u:obj
 
 # Flash
 genfscon proc /qcom_flash                                                  u:object_r:cam_proc:s0
-
-# Oppo display
-genfscon proc /sys/kernel/oppo_display/panel_id                            u:object_r:oppo_display_proc:s0
 
 # Project version
 genfscon proc /oppoVersion                                                 u:object_r:oppo_ver_proc:s0

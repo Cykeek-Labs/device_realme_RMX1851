@@ -1,6 +1,9 @@
+allow init { bt_firmware_file firmware_file }:filesystem getattr;
+allow init hal_audio_default:binder call;
 allow init oppo_ver_proc:file { read open getattr };
 allow init proc_sched:file w_file_perms;
 allow init shell_data_file:file { getattr setattr };
+allow init socket_device:sock_file { create setattr unlink };
 allow init sysfs_cpu_boost:file w_file_perms;
 allow init sysfs_devices_system_cpu:file w_file_perms;
 allow init sysfs_kgsl:file w_file_perms;

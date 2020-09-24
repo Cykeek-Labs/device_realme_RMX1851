@@ -3,3 +3,4 @@ type oppo_fp_prop, property_type;
 type oppo_wlan_prop, property_type;
 type vendor_camera_prop, property_type;
 type vendor_perf_prop, property_type;
+type vendor_wifi_prop, property_type;

@@ -6,6 +6,13 @@ vendor/etc/acdbdata/18621/Handset_cal.acdb
 vendor/etc/acdbdata/18621/Hdmi_cal.acdb
 vendor/etc/acdbdata/18621/Headset_cal.acdb
 vendor/etc/acdbdata/18621/Speaker_cal.acdb
+vendor/etc/acdbdata/18637/Bluetooth_cal.acdb
+vendor/etc/acdbdata/18637/General_cal.acdb
+vendor/etc/acdbdata/18637/Global_cal.acdb
+vendor/etc/acdbdata/18637/Handset_cal.acdb
+vendor/etc/acdbdata/18637/Hdmi_cal.acdb
+vendor/etc/acdbdata/18637/Headset_cal.acdb
+vendor/etc/acdbdata/18637/Speaker_cal.acdb
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # ADSP

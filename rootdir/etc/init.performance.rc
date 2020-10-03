@@ -16,6 +16,9 @@ on property:perf_profile=0
     write /sys/class/kgsl/kgsl-3d0/devfreq/max_freq 430000000
     write /sys/class/kgsl/kgsl-3d0/default_pwrlevel 4
 
+    write /proc/sys/kernel/sched_downmigrate "90"
+    write /proc/sys/kernel/sched_upmigrate "96"
+
     write /proc/sys/kernel/sched_upmigrate "96"
     write /proc/sys/kernel/sched_downmigrate "90"
 
@@ -35,3 +38,6 @@ on property:perf_profile=1
 
     write /proc/sys/kernel/sched_upmigrate "20"
     write /proc/sys/kernel/sched_downmigrate "10"
+
+    write /proc/sys/kernel/sched_downmigrate "10"
+    write /proc/sys/kernel/sched_upmigrate "20"

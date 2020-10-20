@@ -44,12 +44,15 @@ import androidx.preference.PreferenceGroup;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.TwoStatePreference;
 
+import org.lineageos.settings.device.SeekBarPreference;
+
 public class DeviceSettings extends PreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
     private static final String KEY_CATEGORY_GRAPHICS = "graphics";
     public static final String KEY_OTG_SWITCH = "otg";
     public static final String KEY_GAME_SWITCH = "game";
+    public static final String KEY_CHARGING_SWITCH = "smart_charging";
 
     public static final String KEY_FPS_INFO = "fps_info";
 
@@ -62,6 +65,8 @@ public class DeviceSettings extends PreferenceFragment
     private static TwoStatePreference mGameModeSwitch;
     private static SwitchPreference mFpsInfo;
     private static NotificationManager mNotificationManager;
+    private static TwoStatePreference mSmartChargingSwitch;
+    public static SeekBarPreference mSeekBarPreference;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -79,6 +84,14 @@ public class DeviceSettings extends PreferenceFragment
         mGameModeSwitch.setChecked(GameModeSwitch.isCurrentlyEnabled(this.getContext()));
         mGameModeSwitch.setOnPreferenceChangeListener(new GameModeSwitch(getContext()));
 
+        mSmartChargingSwitch = (TwoStatePreference) findPreference(KEY_CHARGING_SWITCH);
+        mSmartChargingSwitch.setChecked(prefs.getBoolean(KEY_CHARGING_SWITCH, false));
+        mSmartChargingSwitch.setOnPreferenceChangeListener(new SmartChargingSwitch(getContext()));
+
+        mSeekBarPreference = (SeekBarPreference) findPreference("seek_bar");
+        mSeekBarPreference.setEnabled(mSmartChargingSwitch.isChecked());
+        SeekBarPreference.mProgress = prefs.getInt("seek_bar", 95);
+
         mFpsInfo = (SwitchPreference) findPreference(KEY_FPS_INFO);
         mFpsInfo.setChecked(prefs.getBoolean(KEY_FPS_INFO, false));
         mFpsInfo.setOnPreferenceChangeListener(this);
@@ -91,8 +104,8 @@ public class DeviceSettings extends PreferenceFragment
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        boolean enabled = (Boolean) newValue;
         if (preference == mFpsInfo) {
-            boolean enabled = (Boolean) newValue;
             Intent fpsinfo = new Intent(this.getContext(), org.lineageos.settings.device.FPSInfoService.class);
             if (enabled) {
                 this.getContext().startService(fpsinfo);

@@ -1130,12 +1130,10 @@ vendor/lib/libmm-color-convertor.so
 vendor/lib/libmmosal_proprietary.so
 vendor/lib/libmmparser_lite_proprietary.so
 vendor/lib/libOmxMux_proprietary.so
--vendor/lib/libplatformconfig.so
 vendor/lib/libswvdec.so
 vendor/lib/libvppclient.so
 vendor/lib/libvpphvx.so
 vendor/lib/libvpplibrary.so
-vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so
 vendor/lib/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/libI420colorconvert.so
@@ -1143,12 +1141,10 @@ vendor/lib64/libOmxVpp.so
 vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmmosal_proprietary.so
 vendor/lib64/libmmparser_lite_proprietary.so
--vendor/lib64/libplatformconfig.so
 vendor/lib64/libswvdec.so
 vendor/lib64/libvppclient.so
 vendor/lib64/libvpphvx.so
 vendor/lib64/libvpplibrary.so
-vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 
 # Media codecs

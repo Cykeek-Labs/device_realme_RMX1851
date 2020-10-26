@@ -3,6 +3,9 @@ on boot
     write /proc/sys/fs/suid_dumpable 1
     setprop persist.vendor.radio.force_on_dc true
 
+    # fastchg firmware
+    chown system system /proc/fastchg_fw_update
+
     # OTG
     write /sys/class/power_supply/usb/otg_switch 1
 
@@ -14,3 +17,28 @@ on boot
     chown system system /proc/touchpanel/oppo_tp_limit_enable
     chown system system /proc/touchpanel/tp_fw_update
     write /proc/touchpanel/tp_fw_update 1
+
+    # short_c_batt
+    chown system system /sys/class/power_supply/battery/short_c_batt_limit_chg
+    chown system system /sys/class/power_supply/battery/short_c_batt_limit_rechg
+    chown system system /sys/class/power_supply/battery/short_c_hw_feature
+    chown system system /sys/class/power_supply/battery/short_ic_otp_status
+    chown system system /sys/class/power_supply/battery/short_ic_volt_thresh
+
+    # wakeup_stastisc reset
+    chown system system /sys/kernel/wakeup_reasons/wakeup_stastisc_reset
+    chown system system /sys/kernel/wakelock_profiler/active_max
+    chown system system /sys/kernel/wakelock_profiler/kernel_time
+    chmod 0664 /sys/kernel/wakeup_reasons/wakeup_stastisc_reset
+    chmod 0664 /sys/kernel/wakelock_profiler/active_max
+    chmod 0664 /sys/kernel/wakelock_profiler/kernel_time
+
+    # tbatt poweroff
+    chown system system /proc/tbatt_pwroff
+
+    # ship mode
+    chown system system /sys/class/power_supply/battery/ship_mode
+
+on charger
+    setprop service.bootanim.exit 1
+    trigger late-init

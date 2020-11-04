@@ -199,7 +199,9 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     libvulkan \
     memtrack.sdm710 \
-    vendor.display.config@1.7 \
+    vendor.display.config@1.9 \
+    vendor.display.config@1.9.vendor \
+    vendor.display.config@2.0 \
     vendor.qti.hardware.display.allocator@1.0-service
 
 # DPM

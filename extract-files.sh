@@ -67,7 +67,7 @@ function blob_fixup() {
             sed -i "s/name=\"android.hidl.manager-V1.0-java/name=\"android.hidl.manager@1.0-java/g" "${2}"
             ;;
         system_ext/lib64/libdpmframework.so)
-            patchelf --add-needed "libshim_dpmframework.so" "${2}"
+            "${PATCHELF}" --add-needed "libshim_dpmframework.so" "${2}"
             ;;
         vendor/lib/hw/camera.qcom.so | vendor/lib64/hw/camera.qcom.so)
             sed -i "s|/oppo_product/vendor_overlay/0/etc/camera/oppo_camera_config.xml|//////vendor///////etc///////camera///////oppo_camera_config.xml|g" "${2}"

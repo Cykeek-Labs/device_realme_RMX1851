@@ -896,6 +896,9 @@ vendor/firmware/a630_sqe.fw
 vendor/lib64/hw/vulkan.sdm710.so
 vendor/lib/hw/vulkan.sdm710.so
 
+# Health
+vendor/bin/hw/android.hardware.health@2.0-service:vendor/bin/hw/android.hardware.health@2.0-service.RMX1851
+
 # Hypnus
 vendor/bin/hw/vendor.oppo.hardware.hypnus@1.0-service
 vendor/etc/init/vendor.oppo.hardware.hypnus@1.0-service.rc

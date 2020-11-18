@@ -603,10 +603,6 @@ vendor/lib/vendor.qti.latency@2.0.so
 # Display configs
 vendor/etc/OPPO_OLED_AD_calib.cfg
 
-# Display hardware
-vendor/lib64/hw/hwcomposer.sdm710.so
-vendor/lib/hw/hwcomposer.sdm710.so
-
 # Display (HDR)
 vendor/lib64/libhdr_tm.so
 vendor/lib/libhdr_tm.so

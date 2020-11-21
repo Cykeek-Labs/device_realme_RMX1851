@@ -1,3 +1,5 @@
+# All unpinned blobs below are extracted from RMX1851EX_11_C.10
+
 # ACDB
 vendor/etc/acdbdata/18621/Bluetooth_cal.acdb
 vendor/etc/acdbdata/18621/General_cal.acdb
@@ -165,7 +167,7 @@ vendor/etc/camera/license.lic
 vendor/etc/camera/mtStereoParams.bin
 vendor/etc/camera/mwStereoParams.bin
 vendor/etc/camera/M_Verify_Faster_Common_4.0.0_wp.model
-oppo_product/vendor_overlay/0/etc/camera/oppo_camera_config.xml:vendor/etc/camera/oppo_camera_config.xml
+vendor/euclid/product/vendor_overlay/0/etc/camera/oppo_camera_config.xml:vendor/etc/camera/oppo_camera_config.xml
 vendor/etc/camera/skinSeg.model
 vendor/etc/camera/vidhance_calibration
 vendor/lib64/camera/com.qti.sensormodule.ofilm_gc5035.bin
@@ -730,15 +732,15 @@ vendor/lib/vendor.oppo.hardware.commondcs@1.0.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 
 # Fingerprint firmware
-oppo_product/vendor/firmware/a_fp.b00:vendor/firmware/a_fp.b00
-oppo_product/vendor/firmware/a_fp.b01:vendor/firmware/a_fp.b01
-oppo_product/vendor/firmware/a_fp.b02:vendor/firmware/a_fp.b02
-oppo_product/vendor/firmware/a_fp.b03:vendor/firmware/a_fp.b03
-oppo_product/vendor/firmware/a_fp.b04:vendor/firmware/a_fp.b04
-oppo_product/vendor/firmware/a_fp.b05:vendor/firmware/a_fp.b05
-oppo_product/vendor/firmware/a_fp.b06:vendor/firmware/a_fp.b06
-oppo_product/vendor/firmware/a_fp.b07:vendor/firmware/a_fp.b07
-oppo_product/vendor/firmware/a_fp.mdt:vendor/firmware/a_fp.mdt
+vendor/euclid/product/vendor/firmware/a_fp.b00:vendor/firmware/a_fp.b00
+vendor/euclid/product/vendor/firmware/a_fp.b01:vendor/firmware/a_fp.b01
+vendor/euclid/product/vendor/firmware/a_fp.b02:vendor/firmware/a_fp.b02
+vendor/euclid/product/vendor/firmware/a_fp.b03:vendor/firmware/a_fp.b03
+vendor/euclid/product/vendor/firmware/a_fp.b04:vendor/firmware/a_fp.b04
+vendor/euclid/product/vendor/firmware/a_fp.b05:vendor/firmware/a_fp.b05
+vendor/euclid/product/vendor/firmware/a_fp.b06:vendor/firmware/a_fp.b06
+vendor/euclid/product/vendor/firmware/a_fp.b07:vendor/firmware/a_fp.b07
+vendor/euclid/product/vendor/firmware/a_fp.mdt:vendor/firmware/a_fp.mdt
 
 # FM
 lib64/fm_helium.so
@@ -1547,8 +1549,8 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 
 # Widevine DRM
-oppo_product/vendor_overlay/29/lib64/liboemcrypto.so:vendor/lib64/liboemcrypto.so
-oppo_product/vendor_overlay/29/lib/liboemcrypto.so:vendor/lib/liboemcrypto.so
+vendor/euclid/product/vendor_overlay/29/lib64/liboemcrypto.so:vendor/lib64/liboemcrypto.so
+vendor/euclid/product/vendor_overlay/29/lib/liboemcrypto.so:vendor/lib/liboemcrypto.so
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
 vendor/lib64/mediadrm/libwvdrmengine.so

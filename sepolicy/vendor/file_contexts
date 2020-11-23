@@ -53,3 +53,6 @@
 
 # Touch HAL
 /vendor/bin/hw/vendor\.lineage\.touch@1\.0-service\.RMX1851                                             u:object_r:hal_lineage_touch_default_exec:s0
+
+# Thermal
+/vendor/bin/hw/android\.hardware\.thermal@2\.0-service\.qti                                            u:object_r:hal_thermal_default_exec:s0

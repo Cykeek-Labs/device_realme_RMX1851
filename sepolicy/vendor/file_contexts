@@ -1,3 +1,6 @@
+# Adreno
+/vendor/lib(64)?/libadreno_app_profiles\.so                                                             u:object_r:same_process_hal_file:s0
+
 # Camera
 /mnt/vendor/persist/camera(/.*)?                                                                        u:object_r:persist_camera_file:s0
 /vendor/bin/hw/vendor\.oppo\.hardware\.camera\.oppoAlgoProcessService@1\.0-service                      u:object_r:hal_camera_default_exec:s0

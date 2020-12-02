@@ -53,6 +53,7 @@ public class DeviceSettings extends PreferenceFragment
     public static final String KEY_OTG_SWITCH = "otg";
     public static final String KEY_GAME_SWITCH = "game";
     public static final String KEY_CHARGING_SWITCH = "smart_charging";
+    public static final String KEY_RESET_STATS = "reset_stats";
 
     public static final String KEY_FPS_INFO = "fps_info";
 
@@ -66,6 +67,7 @@ public class DeviceSettings extends PreferenceFragment
     private static SwitchPreference mFpsInfo;
     private static NotificationManager mNotificationManager;
     private static TwoStatePreference mSmartChargingSwitch;
+    public static TwoStatePreference mResetStats;
     public static SeekBarPreference mSeekBarPreference;
 
     @Override
@@ -87,6 +89,11 @@ public class DeviceSettings extends PreferenceFragment
         mSmartChargingSwitch = (TwoStatePreference) findPreference(KEY_CHARGING_SWITCH);
         mSmartChargingSwitch.setChecked(prefs.getBoolean(KEY_CHARGING_SWITCH, false));
         mSmartChargingSwitch.setOnPreferenceChangeListener(new SmartChargingSwitch(getContext()));
+
+        mResetStats = (TwoStatePreference) findPreference(KEY_RESET_STATS);
+        mResetStats.setChecked(prefs.getBoolean(KEY_RESET_STATS, false));
+        mResetStats.setEnabled(mSmartChargingSwitch.isChecked());
+        mResetStats.setOnPreferenceChangeListener(this);
 
         mSeekBarPreference = (SeekBarPreference) findPreference("seek_bar");
         mSeekBarPreference.setEnabled(mSmartChargingSwitch.isChecked());

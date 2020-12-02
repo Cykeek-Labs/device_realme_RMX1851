@@ -32,4 +32,6 @@
     <string name="smart_charging_main_title">Battery</string>
     <string name="smart_charging_title">Smart Charging</string>
     <string name="smart_charging_summary">Protects from over charging the device</string>
+    <string name="reset_stats_title">Reset battery stats</string>
+    <string name="reset_stats_summary">Battery stats will get reset when charging limit is reached</string>
 </resources>

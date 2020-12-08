@@ -640,9 +640,18 @@ service vendor.contexthub-hal-1-0 /vendor/bin/hw/android.hardware.contexthub@1.0
     group system
     disabled
 
-service health-hal-2-0 /vendor/bin/hw/android.hardware.health@2.0-service.RMX1851
-    class hal
+service health-hal-2-1 /vendor/bin/hw/android.hardware.health@2.1-service
+    override
+    class hal charger
     user system
     group system
-    capabilities WAKE_ALARM
+    capabilities WAKE_ALARM BLOCK_SUSPEND
+    file /dev/kmsg w
+    disabled
+
+service health-hal-2-1.RMX1851 /vendor/bin/hw/android.hardware.health@2.1-service.RMX1851
+    class hal charger
+    user system
+    group system
+    capabilities WAKE_ALARM BLOCK_SUSPEND
     file /dev/kmsg w

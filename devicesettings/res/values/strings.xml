@@ -17,10 +17,12 @@
     <string name="misc_title">Misc settings</string>
 
     <!-- game mode -->
-    <string name="game_mode_summary">Boost Touch Sampling Rate, enables performance mode and also enables DND mode for uninterrupted game play</string>
-    <string name="game_mode_title">Game mode</string>
-    <string name="tile_game_mode">Game mode</string>
-    <string name="game_mode_warning">Using game mode will impact battery life significantly</string>
+    <string name="game_mode_summary">Boost Touch Sampling Rate, enables performance mode.\nUsing game mode will impact battery life significantly</string>
+    <string name="game_mode_title">Game Mode</string>
+    <string name="tile_game_mode">Game Mode</string>
+    <string name="dnd_title">Do Not Disturb</string>
+    <string name="dnd_summary">DND will be activated if Game Mode is enabled</string>
+    <string name="game_mode_notif_content">Game Mode is activated</string>
     <!-- fps info -->
     <string name="fps_info_title">FPS overlay</string>
     <string name="fps_info_summary">Show overlay with current frames per second</string>

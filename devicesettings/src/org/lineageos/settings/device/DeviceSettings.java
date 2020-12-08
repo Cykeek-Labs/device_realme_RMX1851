@@ -54,6 +54,7 @@ public class DeviceSettings extends PreferenceFragment
     public static final String KEY_GAME_SWITCH = "game";
     public static final String KEY_CHARGING_SWITCH = "smart_charging";
     public static final String KEY_RESET_STATS = "reset_stats";
+    public static final String KEY_DND_SWITCH = "dnd";
 
     public static final String KEY_FPS_INFO = "fps_info";
 
@@ -64,6 +65,7 @@ public class DeviceSettings extends PreferenceFragment
 
     private static TwoStatePreference mOTGModeSwitch;
     private static TwoStatePreference mGameModeSwitch;
+    public static TwoStatePreference mDNDSwitch;
     private static SwitchPreference mFpsInfo;
     private static NotificationManager mNotificationManager;
     private static TwoStatePreference mSmartChargingSwitch;
@@ -85,6 +87,10 @@ public class DeviceSettings extends PreferenceFragment
         mGameModeSwitch.setEnabled(GameModeSwitch.isSupported());
         mGameModeSwitch.setChecked(GameModeSwitch.isCurrentlyEnabled(this.getContext()));
         mGameModeSwitch.setOnPreferenceChangeListener(new GameModeSwitch(getContext()));
+
+        mDNDSwitch = (TwoStatePreference) findPreference(KEY_DND_SWITCH);
+        mDNDSwitch.setChecked(prefs.getBoolean(KEY_DND_SWITCH, false));
+        mDNDSwitch.setOnPreferenceChangeListener(this);
 
         mSmartChargingSwitch = (TwoStatePreference) findPreference(KEY_CHARGING_SWITCH);
         mSmartChargingSwitch.setChecked(prefs.getBoolean(KEY_CHARGING_SWITCH, false));

@@ -106,7 +106,6 @@ on boot
     mount functionfs adb /dev/usb-ffs/adb uid=2000,gid=1000,rmode=0770,fmode=0660
     write /sys/class/android_usb/android0/f_ffs/aliases adb
     setprop sys.mtp.device_type 2
-    setprop vendor.usb.controller ${sys.usb.controller}
     enable vendor.qcom-usb-sh
 
 service vendor.qcom-usb-sh /vendor/bin/init.qcom.usb.sh
@@ -114,6 +113,9 @@ service vendor.qcom-usb-sh /vendor/bin/init.qcom.usb.sh
     user root
     oneshot
     disabled
+
+on property:vendor.usb.controller=*
+   setprop sys.usb.controller ${vendor.usb.controller}
 
 on property:persist.vendor.usb.config=*
     setprop persist.sys.usb.config ${persist.vendor.usb.config}

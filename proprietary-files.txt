@@ -870,8 +870,8 @@ vendor/lib/vendor.oppo.hardware.hypnus@1.0.so
 vendor/lib64/libhypnusclient.so
 vendor/lib64/vendor.oppo.hardware.hypnus@1.0.so
 
-# IMS - from polaris - QKQ1.190828.002/V11.0.3.0.QDGCNXM
--product/priv-app/ims/ims.apk:system_ext/priv-app/ims/ims.apk|35bdad3411774dded520258823d985e59affd914
+# IMS - from LA.UM.9.8.r1-02700-SDM710.0
+-product/priv-app/ims/ims.apk:system_ext/priv-app/ims/ims.apk|535c6e1b0b633898c3a8962be2bd0fec8176d83d
 
 # IMS
 -product/app/uceShimService/uceShimService.apk:system_ext/app/uceShimService/uceShimService.apk
@@ -1182,15 +1182,14 @@ vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 
-# RIL - from polaris - QKQ1.190828.002/V11.0.3.0.QDGCNXM
-product/framework/qti-telephony-common.jar:system_ext/framework/qti-telephony-common.jar|91fe0ce296fc29bece6df81070b9b3b4ee41a1b4
+# RIL - from LA.UM.9.1.r1-07000-SMxxx0.0
+product/framework/qti-telephony-common.jar:system_ext/framework/qti-telephony-common.jar|695214c1294dc9a79ee48387140c9907203300d7
 
 # RIL
 -product/app/QtiTelephonyService/QtiTelephonyService.apk:system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 product/etc/permissions/qcrilhook.xml:system_ext/etc/permissions/qcrilhook.xml
 product/etc/permissions/telephonyservice.xml:system_ext/etc/permissions/telephonyservice.xml
 product/framework/qcrilhook.jar:system_ext/framework/qcrilhook.jar
-product/framework/qti-telephony-common.jar:system_ext/framework/qti-telephony-common.jar
 product/framework/QtiTelephonyServicelibrary.jar:system_ext/framework/QtiTelephonyServicelibrary.jar
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk:system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 -vendor/app/IWlanService/IWlanService.apk

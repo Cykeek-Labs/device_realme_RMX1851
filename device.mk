@@ -293,6 +293,10 @@ PRODUCT_PACKAGES += \
     android.system.net.netd@1.1 \
     netutils-wrapper-1.0
 
+# PocketMode
+PRODUCT_PACKAGES += \
+    RealmePocketMode
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti

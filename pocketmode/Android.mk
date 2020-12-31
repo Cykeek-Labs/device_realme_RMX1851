@@ -10,7 +10,6 @@ LOCAL_PACKAGE_NAME := RealmePocketMode
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVATE_PLATFORM_APIS := true
 LOCAL_PRIVILEGED_MODULE := true
-
-LOCAL_PROGUARD_FLAG_FILES := proguard.flags
+LOCAL_PROGUARD_ENABLED := obfuscation optimization
 
 include $(BUILD_PACKAGE)

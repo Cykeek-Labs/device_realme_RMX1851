@@ -33,9 +33,6 @@ ro.camera.relight.enable=0
 ro.camera.attr.detect.enable=1
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
 
-# CNE
-persist.vendor.cne.feature=1
-
 # Data modules
 persist.data.netmgrd.qos.enable=true
 persist.vendor.data.mode=concurrent

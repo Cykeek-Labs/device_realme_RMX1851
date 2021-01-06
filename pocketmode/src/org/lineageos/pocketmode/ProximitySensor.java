@@ -85,6 +85,6 @@ public class ProximitySensor implements SensorEventListener {
             mSensorManager.unregisterListener(this, mSensor);
         });
         // Ensure FP is left enabled
-        setFPProximityState(/* isNear */ false);
+        setFPProximityState(/* isNear */ true);
     }
 }

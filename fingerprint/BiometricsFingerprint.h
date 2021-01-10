@@ -45,6 +45,7 @@ using ::android::OK;
 using ::android::sp;
 using ::android::status_t;
 
+class OppoClientCallback;
 struct BiometricsFingerprint : public IBiometricsFingerprint {
 public:
     BiometricsFingerprint();
@@ -60,22 +61,10 @@ public:
     Return<RequestStatus> remove(uint32_t gid, uint32_t fid) override;
     Return<RequestStatus> setActiveGroup(uint32_t gid, const hidl_string& storePath) override;
     Return<RequestStatus> authenticate(uint64_t operationId, uint32_t gid) override;
-    Return<RequestStatus> cleanUp();
-    Return<RequestStatus> pauseEnroll();
-    Return<RequestStatus> continueEnroll();
-    Return<RequestStatus> setTouchEventListener();
-    Return<RequestStatus> dynamicallyConfigLog(uint32_t on);
-    Return<RequestStatus> pauseIdentify();
-    Return<RequestStatus> continueIdentify();
-    Return<RequestStatus> getAlikeyStatus();
-    Return<RequestStatus> getEnrollmentTotalTimes();
-    Return<RequestStatus> getEngineeringInfo(uint32_t type);
-    Return<RequestStatus> touchDown();
-    Return<RequestStatus> touchUp();
 
 private:
     sp<vendor::oppo::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint> mOppoBiometricsFingerprint;
-    sp<vendor::oppo::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprintClientCallback> mOppoClientCallback;
+    sp<OppoClientCallback> mOppoClientCallback;
     static Return<RequestStatus> OppoToAOSPRequestStatus(vendor::oppo::hardware::biometrics::fingerprint::V2_1::RequestStatus req);
 };
 

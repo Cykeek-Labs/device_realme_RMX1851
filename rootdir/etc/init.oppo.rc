@@ -44,7 +44,3 @@ on init
     # OTG
     chown system system /sys/class/power_supply/usb/otg_switch
     chmod 0664 /sys/class/power_supply/usb/otg_switch
-
-    # mmi_charging_enable
-    chown system system /sys/class/power_supply/battery/mmi_charging_enable
-    chmod 0664 /sys/class/power_supply/battery/mmi_charging_enable

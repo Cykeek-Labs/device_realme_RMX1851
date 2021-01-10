@@ -26,7 +26,6 @@ import android.content.SharedPreferences;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceManager;
-import android.os.UserHandle;
 import android.util.Log;
 
 import org.lineageos.settings.device.DeviceSettings;
@@ -61,14 +60,12 @@ public class SmartChargingSwitch implements OnPreferenceChangeListener {
         Boolean enabled = (Boolean) newValue;
         Intent SmartChargingSVC = new Intent(mContext, org.lineageos.settings.device.SmartChargingService.class);
         if (enabled) {
-            mContext.startServiceAsUser(SmartChargingSVC, UserHandle.CURRENT);
+            mContext.startService(SmartChargingSVC);
             DeviceSettings.mSeekBarPreference.setEnabled(true);
-            DeviceSettings.mResetStats.setEnabled(true);
             Log.d("DeviceSettings", "Starting SmartChargingSVC");
         } else {
-            mContext.stopServiceAsUser(SmartChargingSVC, UserHandle.CURRENT);
+            mContext.stopService(SmartChargingSVC);
             DeviceSettings.mSeekBarPreference.setEnabled(false);
-            DeviceSettings.mResetStats.setEnabled(false);
             Utils.writeValue(FILE, "1");
             Log.d("DeviceSettings", "Stopping SmartChargingSVC");
         }

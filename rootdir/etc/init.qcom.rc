@@ -244,10 +244,6 @@ on post-fs-data
     mkdir /data/vendor/port_bridge 0770 radio radio
     chmod 0770 /data/vendor/port_bridge
 
-    #create netmgr log dir
-    mkdir /data/vendor/netmgr 0770 radio radio
-    chmod 0770 /data/vendor/netmgr
-
     #Create QTI dir for logs
     mkdir /data/vendor/dataqti 0770 radio radio
     chmod 0770 /data/vendor/dataqti
@@ -495,9 +491,6 @@ service vendor.qmuxd /system/vendor/bin/qmuxd
     user root
     group radio audio bluetooth gps nfc diag
     disabled
-
-service vendor.netmgrd /system/vendor/bin/netmgrd
-    class main
 
 service vendor.dataqti /system/vendor/bin/qti
     class main

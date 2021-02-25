@@ -867,9 +867,6 @@ vendor/lib64/libqti-perfd-client.so|d6502c16ab4dd7642641b6a8cbb061847ff5cb2d
 vendor/lib64/libqti-perfd.so|2a30ad97973e17694b897c09b5b293c96cbcbab0
 vendor/lib64/libqti-util.so|834cc98315887e57a5f229f9ee1a0d20d0d8f4c3
 vendor/lib64/libqti-utils.so|e734331e086c9b78852871312429ce69092775ca
-vendor/lib64/vendor.qti.hardware.perf@2.0.so|60a1362c97f5f1fa54de8f7e59ab004c5b525f97
-vendor/lib64/vendor.qti.hardware.perf@2.1.so|af1764ad3d191dfe92348183b1be431d86b10e4e
-vendor/lib64/vendor.qti.hardware.perf@2.2.so|52c4c0cf35d3fa9e509e26252a6dc196c1e89282
 
 # Power-off alarm
 -product/app/PowerOffAlarm/PowerOffAlarm.apk

@@ -19,3 +19,4 @@ allow vendor_init block_device:lnk_file setattr;
 allow vendor_init proc_security:file w_file_perms;
 allow vendor_init proc_touchpanel:dir search;
 allow vendor_init proc_touchpanel:file { write setattr open};
+allow vendor_init tombstone_data_file:lnk_file read;

@@ -133,10 +133,6 @@ vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
 
-# Bluetooth system_ext (Configstore) - from PNX - RKQ1.200906.002
-system_ext/lib64/libbtconfigstore.so|ff297d1e8f1cebfa0fac8bc74827066c2be1c2f4
-system_ext/lib/libbtconfigstore.so|d3294a694ad9c6525cb5dce75bf0939c6488a7c5
-
 # Bluetooth (Configstore)
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so

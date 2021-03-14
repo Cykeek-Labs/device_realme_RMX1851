@@ -178,11 +178,6 @@ PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0-impl.generic \
     android.hardware.contexthub@1.0-service
 
-# Device-specific settings
-PRODUCT_PACKAGES += \
-    devicesettings \
-    RealmeDoze
-
 # Component overrides
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml \
@@ -287,6 +282,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1 \
     netutils-wrapper-1.0
+
+# Parts
+PRODUCT_PACKAGES += \
+    RealmeParts
 
 # PocketMode
 PRODUCT_PACKAGES += \

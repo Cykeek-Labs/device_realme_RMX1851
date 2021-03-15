@@ -287,10 +287,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RealmeParts
 
-# PocketMode
-PRODUCT_PACKAGES += \
-    RealmePocketMode
-
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \

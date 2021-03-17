@@ -284,8 +284,9 @@ PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
 # Parts
-PRODUCT_PACKAGES += \
-    RealmeParts
+$(call inherit-product, packages/apps/RealmeParts/parts.mk)
+PRODUCT_COPY_FILES += \
+    packages/apps/RealmeParts/init/cabc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cabc.rc
 
 # Power
 PRODUCT_PACKAGES += \

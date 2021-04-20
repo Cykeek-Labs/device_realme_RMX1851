@@ -155,6 +155,10 @@ PRODUCT_PACKAGES += \
     Snap \
     vendor.qti.hardware.camera.device@1.0.vendor
 
+# Charger
+PRODUCT_PACKAGES += \
+    libsuspend
+
 # Init scripts
 PRODUCT_PACKAGES += \
     fstab.qcom \

@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from RMX1851EX_11_C.10
+# All unpinned blobs below are extracted from RMX1851EX_11_C.15
 
 # ACDB
 vendor/etc/acdbdata/18621/Bluetooth_cal.acdb

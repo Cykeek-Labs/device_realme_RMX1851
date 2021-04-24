@@ -301,14 +301,10 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.RMX1851-libperfmgr \
-    vendor.qti.hardware.perf@2.2.vendor
+    android.hardware.power-service.RMX1851-libperfmgr
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/power/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
 
 # Preopt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \

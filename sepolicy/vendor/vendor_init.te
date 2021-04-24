@@ -14,10 +14,12 @@ set_prop(vendor_init, freq_prop)
 set_prop(vendor_init, qcom_ims_prop)
 set_prop(vendor_init, vendor_camera_prop)
 set_prop(vendor_init, vendor_dataqdp_prop)
+set_prop(vendor_init, vendor_power_prop)
 
 allow vendor_init block_device:lnk_file setattr;
 allow vendor_init proc_security:file w_file_perms;
 allow vendor_init proc_sysctl_autogroup:file w_file_perms;
+allow vendor_init proc_sysctl_schedboost:file w_file_perms;
 allow vendor_init proc_touchpanel:dir search;
 allow vendor_init proc_touchpanel:file { write setattr open};
 allow vendor_init tombstone_data_file:lnk_file read;

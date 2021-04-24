@@ -877,7 +877,6 @@ vendor/etc/perf/perfboostsconfig.xml|cd2183d254b0ba27cc17f7dd51f090c432b672bc
 vendor/etc/perf/perfconfigstore.xml|62f780c6f974a62d18a66d0dcee30efb04903512
 vendor/etc/perf/targetconfig.xml|95f511bb4030b2755a0b340814fe41cccac994ab
 vendor/etc/perf/targetresourceconfigs.xml|bcac95b779250981197349f926a84b67e649aa2f
-vendor/etc/powerhint.xml|f35137c8f5068d03bba832b995e3e89b1ad718c2
 vendor/lib64/libadaptlaunch.so|23abb42bc88b552f8bc70dcd1832fab39ec79f47
 vendor/lib64/libappclassifier.so|b18ba33ff968c2e13d95558e12e0c130a4611945
 vendor/lib64/libgameoptfeature.so|288259c3cafcec75a8789864a58f5a3028c4e3cc

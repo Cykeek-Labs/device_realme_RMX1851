@@ -55,7 +55,7 @@ void vendor_load_properties()
 
     char const *operator_name_file = "/proc/oppoVersion/operatorName";
     std::string build_epoch, build_fingerprint, device, operator_name;
-    build_epoch = "1597290604";
+    build_epoch = "1611387308";
 
     if (ReadFileToString(operator_name_file, &operator_name)) {
         /* CHINA */

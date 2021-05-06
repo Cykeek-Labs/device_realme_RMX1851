@@ -1,5 +1,7 @@
 typeattribute radio system_writes_vendor_properties_violators;
 
+dontaudit radio property_type:file { getattr open };
+
 allow radio { hal_datafactory_hwservice hal_iwlan_hwservice }:hwservice_manager find; 
 get_prop(radio, qcom_ims_prop)
 set_prop(radio, vendor_radio_prop)

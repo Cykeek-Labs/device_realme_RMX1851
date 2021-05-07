@@ -1,2 +1,4 @@
+dontaudit hal_sensors_default property_type:file { getattr open };
+
 allow hal_sensors_default proc_touchpanel:dir { read open };
 get_prop(hal_sensors_default, vendor_camera_prop)

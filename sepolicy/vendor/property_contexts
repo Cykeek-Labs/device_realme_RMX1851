@@ -56,6 +56,7 @@ ro.build.expect.trustzone           u:object_r:exported_default_prop:s0
 gsm.operator.numeric                u:object_r:vendor_radio_prop:s0
 oppo.device.imeicache               u:object_r:vendor_radio_prop:s0
 oppo.eng.factory.no                 u:object_r:vendor_radio_prop:s0
+persist.oppo.network                u:object_r:vendor_radio_prop:s0
 persist.oppo.nw.region.lock         u:object_r:vendor_radio_prop:s0
 persist.sys.oppo.simlockoperator    u:object_r:vendor_radio_prop:s0
 ro.build.version.ota                u:object_r:vendor_radio_prop:s0

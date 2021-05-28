@@ -4,6 +4,7 @@ ro.opa.eligible_device=true
 # IORap
 ro.iorapd.enable=true
 iorapd.perfetto.enable=true
+iorapd.readahead.enable=true
 
 # LMKD
 ro.lmk.low=1001

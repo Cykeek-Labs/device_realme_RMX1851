@@ -1,6 +1,9 @@
 # Google Assistant
 ro.opa.eligible_device=true
 
+# IORap
+ro.iorapd.enable=true
+
 # LMKD
 ro.lmk.low=1001
 ro.lmk.medium=800

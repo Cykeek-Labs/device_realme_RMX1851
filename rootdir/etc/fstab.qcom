@@ -25,3 +25,5 @@
 /devices/platform/soc/8804000.sdhci/mmc_host*           /storage/sdcard1         vfat    nosuid,nodev                                         wait,voldmanaged=sdcard1:auto
 /devices/platform/soc/1da4000.ufshc_card/host*          /storage/sdcard1         vfat    nosuid,nodev                                         wait,voldmanaged=sdcard1:auto
 /devices/platform/soc/a600000.ssusb/a600000.dwc3/xhci-hcd.*.auto*     /storage/usbotg    auto    defaults        wait,voldmanaged=usbotg:auto
+
+/dev/block/zram0                                        none                     swap    defaults                                             zramsize=2684354560,max_comp_streams=8,zram_backingdev_size=512M

@@ -17,12 +17,17 @@ vendor/etc/acdbdata/18637/Headset_cal.acdb
 vendor/etc/acdbdata/18637/Speaker_cal.acdb
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
-# ADSP
-vendor/bin/adsprpcd
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadsprpc.so
-vendor/lib/libadsp_default_listener.so
-vendor/lib/libadsprpc.so
+# ADSP - from RMX1851_11_F.05
+vendor/bin/adsprpcd|c8a45eb83a6d70dcbcc1b8ec574391b49e8ca8b9
+vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc|96b08f4e97ef20e20a8d7f89212a5549abe66666
+vendor/lib64/libadsp_default_listener.so|aa3b51b544032a250ab02687c0200152f80a23dd
+vendor/lib64/libadsprpc.so|abfed277f0960a939574cd89dceb3383ee8091a6
+vendor/lib64/libfastrpc_utf_stub.so|2f11d383753eb50ebbd8791361d9d61351163f85
+vendor/lib64/libmdsprpc.so|ad44fd019096669d9a83a426892dca84206a5de7
+vendor/lib/libadsp_default_listener.so|aebe95ff3eeb279a642770db5f1383e5aefc4d2f
+vendor/lib/libadsprpc.so|05a32fd83beaa38811bed4fa2ebbb592c465d94d
+vendor/lib/libfastrpc_utf_stub.so|b47a1610772b22c8c2f73d24478ad02389c1a07f
+vendor/lib/libmdsprpc.so|e55930607473d3593c66de96f48e1387bdbfd633
 
 # ADSP modules
 vendor/lib64/rfsa/adsp/libBeautyShot_skel.so
@@ -264,7 +269,6 @@ vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libcvface_api.so
 vendor/lib64/libc++_shared.so
 vendor/lib64/libloadalgo_stub.so
-vendor/lib64/libmdsprpc.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmpbase.so
@@ -322,21 +326,18 @@ vendor/lib64/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0.so
 vendor/lib64/hw/vendor.oppo.hardware.camera.oppoHalAssist@1.0-impl.so
 vendor/lib64/vendor.oppo.hardware.camera.oppoHalAssist@1.0.so
 
-# CDSP
-vendor/bin/cdsprpcd
-vendor/lib64/libcdsp_default_listener.so
-vendor/lib64/libcdsprpc.so
-vendor/lib64/libfastrpc_utf_stub.so
-vendor/lib64/libsdsprpc.so
-vendor/lib64/libsysmon_cdsp_skel.so
-vendor/lib64/libmdsprpc.so
-vendor/lib/libcdsp_default_listener.so
-vendor/lib/libcdsprpc.so
-vendor/lib/libfastcrc.so
-vendor/lib/libfastrpc_utf_stub.so
-vendor/lib/libsdsprpc.so
-vendor/lib/libsysmon_cdsp_skel.so
-vendor/lib/libmdsprpc.so
+# CDSP - from RMX1851_11_F.05
+vendor/bin/cdsprpcd|8f541eab74d52bff8d73f7f280e085c4bf706e99
+vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
+vendor/lib64/libcdsp_default_listener.so|10907139f8fe737cbffba80947082d83e1c019d8
+vendor/lib64/libcdsprpc.so|2f35b690d7606c796a88b729577b5a354087e57c
+vendor/lib64/libsdsprpc.so|e60731e36e0009dee826ae23540957ff36d15ad1
+vendor/lib64/libsysmon_cdsp_skel.so|e5ba4d173b0e09d736b16474ed2f57874cb91916
+vendor/lib/libcdsp_default_listener.so|49dbdd4c8c73a21619569f3723a71b3467e73e75
+vendor/lib/libcdsprpc.so|9cadff1ae81dcc715d135b9803bbd476ffe4dc87
+vendor/lib/libfastcrc.so|893b4b886cc892bb67291f064f2df6a4a67aa039
+vendor/lib/libsdsprpc.so|75de292aa78ce6c4e829740a27721628bb8001f2
+vendor/lib/libsysmon_cdsp_skel.so|d30f7863f72cbcb6d5f657ab780bb53e02e1aaa4
 
 # Charger
 vendor/bin/hvdcp_opti
@@ -483,6 +484,13 @@ vendor/lib64/libsecureui_svcsock.so|2232f56927964f10d41868919d94711930d50ed0
 vendor/lib64/libssd.so|0078e3bef7877b0e2a1e04f46589681f0628f283
 vendor/lib64/libStDrvInt.so|a166aeaeaeb70f12bc607ff7852e039ee5cb004f
 vendor/lib64/libtzdrmgenprov.so|ff8f9eadd70b0ae366a68848c9c71d37a8b75317
+
+# DSP - from RMX1851_11_F.05
+vendor/bin/dspservice|c7809e32581d5c6efac65a3a7689f43526c17bb8
+vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
+vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|f060101b26d3674bb173e5fc95e118f56a8ac15d
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so|5f30d9c5fff738e6194a36a5b93372fa32ec0471
+vendor/lib/vendor.qti.hardware.dsp@1.0.so|e553aafebc4b5f2908fc03f29b086cd1261aa454
 
 # Fingerprint
 vendor/bin/qfp-daemon

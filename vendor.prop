@@ -45,8 +45,7 @@ persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 persist.vendor.bluetooth.modem_nv_support=true
 persist.vendor.service.bdroid.soc.alwayson=true
 persist.vendor.service.bt.iot.enablelogging=true
-vendor.bluetooth.soc=cherokee
-vendor.qcom.bluetooth.soc=cherokee
+persist.vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
 persist.camera.light_ae.enable=1

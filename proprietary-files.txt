@@ -518,10 +518,10 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so
 vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib/vendor.qti.hardware.fm@1.0.so
 
-# Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+# Gatekeeper - from RMX1851_11_F.05
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|de1e8d026b16255040dbe6eb67faa73c9b656553
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|fd66ff5a4824e2938f436e368fb4fa3711099302
 
 # GNSS - from RMX1851_11_F.05
 -vendor/app/CACertService/CACertService.apk|223ba3863921184f5e8218bd3fbfc4135079ece9
@@ -749,30 +749,16 @@ vendor/firmware/ipa_fws.mdt
 vendor/bin/msm_irqbalance
 vendor/etc/msm_irqbalance.conf
 
-# Keybox
-vendor/bin/hw/vendor.oppo.hardware.cryptoeng@1.0-service
-vendor/etc/init/vendor.oppo.hardware.cryptoeng@1.0-service_FDE.rc
-vendor/lib64/libqsee_keybox_ca.so
-vendor/lib64/vendor.oppo.hardware.cryptoeng@1.0.so
-vendor/firmware/cryptoeng.b00
-vendor/firmware/cryptoeng.b01
-vendor/firmware/cryptoeng.b02
-vendor/firmware/cryptoeng.b03
-vendor/firmware/cryptoeng.b04
-vendor/firmware/cryptoeng.b05
-vendor/firmware/cryptoeng.b06
-vendor/firmware/cryptoeng.b07
-vendor/firmware/cryptoeng.mdt
-
-# Keymaster
-vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
-vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
-vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
-vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
-vendor/lib64/libkeymasterdeviceutils.so
-vendor/lib64/libkeymasterprovision.so
-vendor/lib64/libkeymasterutils.so
-vendor/lib64/libqtikeymaster4.so
+# Keymaster - from RMX1851_11_F.05
+vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|14468f2fce94467c4a6077cdb8c91875fd147594
+vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|cce8913b8bdbdf0e50f5fdecd47823a11330534b
+vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc|c8999fb1bccbef81e6b362059e9a6ebd023de98f
+vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so|a58a0f934d32964b9c2e7a15941cb92cd4f27161
+vendor/lib64/libkeymasterdeviceutils.so|e9500ef2f03e09cead88c3c20ccc1c29a6c8f7b1
+vendor/lib64/libkeymasterprovision.so|e2c338b4959ee3d32b1776cda602a834100fc665
+vendor/lib64/libkeymasterutils.so|db21b2fec8e5808c562665746d0394575004070b
+vendor/lib64/libqcbor.so|c7db76dc44c7f492791aa27a18a0a5035f21b062
+vendor/lib64/libqtikeymaster4.so|13f13f5a7650779782a316877cb71cff915a808f
 
 # Listen
 vendor/lib64/hw/sound_trigger.primary.sdm710.so
@@ -855,6 +841,21 @@ vendor/lib/rfsa/adsp/libhexagon_nn_skel.so|f258b2402cdb327e79b225fa67119c4699df6
 vendor/lib64/libsnpeml.so
 vendor/lib64/libsnpe_dsp_domains_v2.so
 vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so
+
+# OPLUS - Keybox - from RMX1851_11_F.05
+odm/bin/hw/vendor.oplus.hardware.cryptoeng@1.0-service|461960dade6cd0da89f2ec7c5c827a4ddb65dc81
+odm/etc/init/vendor.oplus.hardware.cryptoeng@1.0-service_FDE.rc|a89bc7faa1d28f68e5367f13f62b66c132076451
+odm/lib64/libqsee_keybox_ca.so|8097c5a9b89a6e6f80f256037da0f2657f18d8c3
+odm/lib64/vendor.oplus.hardware.cryptoeng@1.0.so|4f6d4fadf72d9ba3ea858db7e904e17e09c08665
+odm/vendor/firmware/cryptoeng.b00|bbb3abb8b24773ac68972d9f26b52cfcc383d922
+odm/vendor/firmware/cryptoeng.b01|26cd116fc54b45be67d761f3e38899e3cea77212
+odm/vendor/firmware/cryptoeng.b02|4c2dbd881079b8408707bf9d7583389c0d61bd1a
+odm/vendor/firmware/cryptoeng.b03|844b8905504b461f279737035abd21980d567a84
+odm/vendor/firmware/cryptoeng.b04|6182dde6a9f8ecde1a451a28c0312154e5b9bab9
+odm/vendor/firmware/cryptoeng.b05|8ae2b9be645a6c7ccaf205207a68f6f1f73d83e6
+odm/vendor/firmware/cryptoeng.b06|eca585f610371b15efb04a0d294176eeae34e5e0
+odm/vendor/firmware/cryptoeng.b07|692901de2317ca9a5f90a21f0bde3144f4854f0d
+odm/vendor/firmware/cryptoeng.mdt|46a913dbdf7ccf9aa0d45ac069f797c6567a155d
 
 # Peripheral manager
 vendor/bin/pm-proxy

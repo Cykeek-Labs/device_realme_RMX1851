@@ -7,7 +7,7 @@
 /vendor/bin/hw/vendor\.oppo\.hardware\.ktv@1\.0-service                                                 u:object_r:hal_camera_default_exec:s0
 
 # CryptoEng
-/vendor/bin/hw/vendor\.oppo\.hardware\.cryptoeng@1\.0-service                                           u:object_r:hal_cryptoeng_default_exec:s0
+/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.cryptoeng@1\.0-service                                u:object_r:hal_cryptoeng_default_exec:s0
 
 # Debugfs
 /sys/kernel/debug/ion/clients(/.*)?                                                                     u:object_r:qti_debugfs:s0

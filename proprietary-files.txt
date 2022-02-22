@@ -854,6 +854,7 @@ odm/vendor/firmware/cryptoeng.b05|8ae2b9be645a6c7ccaf205207a68f6f1f73d83e6
 odm/vendor/firmware/cryptoeng.b06|eca585f610371b15efb04a0d294176eeae34e5e0
 odm/vendor/firmware/cryptoeng.b07|692901de2317ca9a5f90a21f0bde3144f4854f0d
 odm/vendor/firmware/cryptoeng.mdt|46a913dbdf7ccf9aa0d45ac069f797c6567a155d
+vendor/lib64/vendor.oplus.hardware.commondcs@1.0.so|e9da1d3c9ef3f85d6fbde6d8f98f33f3b76f997d
 
 # Peripheral manager
 vendor/bin/pm-proxy

@@ -400,13 +400,13 @@ vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so|09f4b85830f120db89945069cd3
 vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so|07bf28004086b972367c44703bd0247d7a78faf4
 vendor/lib64/vendor.qti.latency@2.0.so|1589280034898a0ab3052234ef90b7c674d5be5b
 
-# Configstore
-vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
-vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
+# Configstore - from RMX1851_11_F.05
+vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|8a64779e1a5df5153f10871cf23c65c3f7f94ae7
+vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
+vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|eb1a99915765fca7add8de87d7c4ef9bf031e155
 
-# Display configs
-vendor/etc/OPPO_OLED_AD_calib.cfg
+# Display configs - from RMX1851_11_F.05
+vendor/etc/OPPO_OLED_AD_calib.cfg|1b229d75eb6e77dec6314c2a9bf962f8478a913b
 
 # Display (HDR) - from PNX - RKQ1.200906.002
 vendor/lib64/libhdr_tm.so|7ac38563480eab0583cb440e667a44cfa596167a
@@ -577,6 +577,7 @@ vendor/lib64/vendor.qti.gnss@2.1.so|391a0e7bdd477ba519aaddc1b0711840e3362dc8
 vendor/lib64/vendor.qti.gnss@3.0.so|b67a1ff507cfb4165a9dc970dc54aa26cc731e6f
 vendor/lib64/vendor.qti.gnss@4.0.so|7d343c73e6720434045cc38ea0e570ae9d03cd51
 vendor/lib64/vendor.qti.gnss@4.0-service.so|3c75d133af5193436167380aa89abcf05d079968
+vendor/lib64/vendor.qti.hardware.cacert@1.0.so|398e5510db4d739de008b7230aa6e688d6c51a8a
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|19a1f7ffb8118c207aa8cb2318996605771c339a
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so|8c85aec8456f69296722c10ae034bd228cd70be2
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so|711f50db51cd10607f9065998cac4521950c4d5a
@@ -732,18 +733,18 @@ vendor/lib/libqti-iopd.so|d93e62ebff4c1c4b17e64c383a05ad2d84d69bb8
 vendor/lib/vendor.qti.hardware.iop@1.0.so|7244776c0f9ef0e01b267b7ef92e8db5912ad89a
 vendor/lib/vendor.qti.hardware.iop@2.0.so|ec767e11249f7f86d66f232676e6b2d5382979e4
 
-# IPA firmware
-vendor/firmware/ipa_fws.b00
-vendor/firmware/ipa_fws.b01
-vendor/firmware/ipa_fws.b02
-vendor/firmware/ipa_fws.b03
-vendor/firmware/ipa_fws.b04
-vendor/firmware/ipa_fws.elf
-vendor/firmware/ipa_fws.mdt
+# IPA firmware - from RMX1851_11_F.05
+vendor/firmware/ipa_fws.b00|b2fca0cfa8e0bda146247c77ee4e3b051340b5c8
+vendor/firmware/ipa_fws.b01|88012269e6d2a0931632101c99d2bc38e7df6271
+vendor/firmware/ipa_fws.b02|f3d7897df5adfbb026a8b88b8364e76a778dc75b
+vendor/firmware/ipa_fws.b03|c07cfef57f8f694b4cee41e78700614efbedf2bc
+vendor/firmware/ipa_fws.b04|e3552692a635dceca369cab6d9349091b669c80a
+vendor/firmware/ipa_fws.elf|93f8a474934e33c46fe1db8567ff150cec85b1d8
+vendor/firmware/ipa_fws.mdt|20825e2013e4cac6378eadb9fbb1bfb25e92d260
 
-# IRQ balance
-vendor/bin/msm_irqbalance
-vendor/etc/msm_irqbalance.conf
+# IRQ balance - from RMX1851_11_F.05
+vendor/bin/msm_irqbalance|c0910fb319bb8287f176f26078241299455baad0
+vendor/etc/msm_irqbalance.conf|9ba814b99a6eb3a31f618a2f8be32d58bf6f1a75
 
 # Keymaster - from RMX1851_11_F.05
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|14468f2fce94467c4a6077cdb8c91875fd147594
@@ -852,11 +853,11 @@ odm/vendor/firmware/cryptoeng.b07|692901de2317ca9a5f90a21f0bde3144f4854f0d
 odm/vendor/firmware/cryptoeng.mdt|46a913dbdf7ccf9aa0d45ac069f797c6567a155d
 vendor/lib64/vendor.oplus.hardware.commondcs@1.0.so|e9da1d3c9ef3f85d6fbde6d8f98f33f3b76f997d
 
-# Peripheral manager
-vendor/bin/pm-proxy
-vendor/bin/pm-service
-vendor/lib64/libperipheral_client.so
-vendor/lib64/libspcom.so
+# Peripheral manager - from RMX1851_11_F.05
+vendor/bin/pm-proxy|832cbe7995de8177a2ef5bdf3f145131dfe828d4
+vendor/bin/pm-service|28f5e8d8f98c8e97941f514bafdc0b369cc5b600
+vendor/lib64/libperipheral_client.so|8cb65f4c93719767048dd7b1b845473fe6074ff7
+vendor/lib64/libspcom.so|9f6b33bed156c8c113c11882cdf6736ce00f59d3
 
 # Perf - from RMX1931EX_11_F.04
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|6b8f077dc724a202f3fc91c0255f88ad45cbdb62
@@ -889,13 +890,13 @@ vendor/lib/libqti-perfd.so|a145dbd5108dfc9c827a482b9359132bfa0660c5
 vendor/lib/libqti-util.so|0fc209bb65b08ea39177fa9dd61db9a9bfe6c754
 vendor/lib/libqti-utils.so|f0396512d699825cd405cd87f59b019ae05e3f81
 
-# Power-off alarm
--product/app/PowerOffAlarm/PowerOffAlarm.apk
-vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
-vendor/bin/power_off_alarm
-vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.alarm@1.0.so
+# Power-off alarm - from RMX1851_11_F.05
+-product/app/PowerOffAlarm/PowerOffAlarm.apk|372ad5ca688ee888747495dc0faf68c08216b2d3
+vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|6f58edbe898a0582b02b688ec8a47a57a50707ec
+vendor/bin/power_off_alarm|a22dad49a912473d92bf9c111ef7de6dd927b6f2
+vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6ffb466e23a7fc3b05
+vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|0119fa4d87505bc5d9426ec8ffe56d9dd3bc9e4f
+vendor/lib64/vendor.qti.hardware.alarm@1.0.so|c7c418cfc889a89ea4f21bf828f626c75a2017c3
 
 # QDCM calibration data
 vendor/etc/qdcm_calib_data_oppo18621_hx83112a_1080_2340_video_mode_dsi_panel.xml
@@ -1150,38 +1151,40 @@ vendor/lib/libscveObjectTracker_stub.so
 vendor/lib/libscvePanorama.so
 vendor/lib/libscvePanorama_lite.so
 
-# SSR
-vendor/bin/ssr_setup
-vendor/bin/subsystem_ramdump
+# SSR - from RMX1851_11_F.05
+vendor/bin/ssr_setup|67ab775129b8c5cfabfd6238d03b7c0beaeef860
+vendor/bin/subsystem_ramdump|f20724feb959fce19183608b7b133952c9fc0396
 
-# Thermal engine
-vendor/bin/thermal-engine
-vendor/lib64/libthermalclient.so
-vendor/lib/libthermalclient.so
+# Thermal engine - from RMX1851_11_F.05
+vendor/bin/thermal-engine|4939d0127123d988ef4ec2c3eab201541dfe738a
+vendor/etc/init/init_thermal-engine.rc|f0d14aa4734b2e8afd61a4eed73238187b268f48
+vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
+vendor/lib64/libthermalclient.so|d042cc537de4950837a5b928f6283fb238a9c59c
 
-# Time services
--vendor/app/TimeService/TimeService.apk
-vendor/bin/time_daemon
-vendor/lib64/libtime_genoff.so
+# Time services - from RMX1851_11_F.05
+-vendor/app/TimeService/TimeService.apk|8f6b0d6741a0113d3d36f7d51a172027c257efea
+vendor/bin/time_daemon|66fe5b9d033a6479fc65357514883f7cc46f0537
+vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
+vendor/lib64/libtime_genoff.so|3f57de1aeb7aa113a0a579cebed85ab4405b9b49
 
-# Touchpanel firmware
-vendor/firmware/tp/18621/FW_HX_NF83112A_DSJM.img
-vendor/firmware/tp/18621/FW_HX_NF83112A_DSJM_FAE.img
-vendor/firmware/tp/18621/FW_HX_NF83112A_DSJM_TEST.img
+# Touchpanel firmware - from RMX1851_11_F.05
+odm/firmware/tp/18621/FW_OPPO_TP_NOFLASH_DSJM.img:vendor/firmware/tp/18621/FW_HX_NF83112A_DSJM.img|f13d712710f2a4c971baac0bfebe1f14c7690d13
+odm/firmware/tp/18621/FW_OPPO_TP_NOFLASH_DSJM_FAE.img:vendor/firmware/tp/18621/FW_HX_NF83112A_DSJM_FAE.img|5e8f72c6877c78b5a050a625bde53949f6b1dd3b
+odm/firmware/tp/18621/FW_OPPO_TP_NOFLASH_DSJM_TEST.img:vendor/firmware/tp/18621/FW_HX_NF83112A_DSJM_TEST.img|ca56b1b728f9662d9e18d520bb6fbb00bea5bc85
 
-# Trusted Execution Environment connector
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
-vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib64/libGPQTEEC_vendor.so
-vendor/lib64/libGPTEE_vendor.so
-vendor/lib64/libQTEEConnector_vendor.so
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
+# Trusted Execution Environment connector - from RMX1851_11_F.05
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|2a9f02e8b042a726357c8875804d217b1e6547d7
+vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|451a55e73dcf563f67edcf2b1e1be5627a685c13
+vendor/lib64/libGPQTEEC_vendor.so|34f52c117be350ae8edc89ee27bf440a3d480e8c
+vendor/lib64/libGPTEE_vendor.so|3dc7837571204f609bc93e4ca2d1b827ab11334d
+vendor/lib64/libQTEEConnector_vendor.so|a89cbeaed5302ab4a6ebe593f68bd2c104f02c7a
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|936b342b6648751f988211337582a9ca05283dba
 
-# Trusted User Interface
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
+# Trusted User Interface - from RMX1851_11_F.05
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|9f5434d184f868c576ac86e950a305d6b4924430
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|68dd1e67b14f10cb999bee7ad59dafe81d1220b0
 
 # VPP - from PNX - RKQ1.200906.002
 vendor/bin/vppservice|555301b19a86374900159423c88efd7bd9cea2f9
@@ -1194,20 +1197,21 @@ vendor/lib64/vendor.qti.hardware.vpp@1.1.so|f7769685d9c0c74f8c8419db028a5d5c3f65
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so|ca1906012d0ab6dc9048aa49703833512308e6cf
 
 # Widevine DRM - from RMX1931EX_11_F.05
-odm/lib64/liboemcrypto.so|a704218544036007c59a0acefe5172014cd302b9
-odm/lib/liboemcrypto.so|5f23db4f5010895efe8ff4ec0505165cda76f522
 odm/bin/hw/android.hardware.drm@1.3-service.widevine|37b4dce2288c0c37bc28680c2de400622f49bf72
 odm/etc/init/android.hardware.drm@1.3-service.widevine.rc|fbfb31ed72cdecb8153727566a64de112e8603c4
 -odm/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
+odm/lib64/liboemcrypto.so|a704218544036007c59a0acefe5172014cd302b9
+odm/lib64/libwvhidl.so|980ee6e32b215a530c0eba41e686ce8d1d24417d
 odm/lib64/mediadrm/libwvdrmengine.so|1be730f7f126745b404ee8dbe5448f52d18cc4e5
+odm/lib/liboemcrypto.so|5f23db4f5010895efe8ff4ec0505165cda76f522
+odm/lib/mediadrm/libwvdrmengine.so|e0573b69f1c16d04dfd7da49892eec76728793bf
 vendor/lib64/libhdcp1prov.so|ea4e8976483b102ad08019da63b77258f6a68ed7
 vendor/lib64/libhdcp2p2prov.so|80efad9da3996e91e4ee4445c804ac6ee7668c04
 vendor/lib64/libhdcpsrm.so|f0057338022c3bd8dc9e8f30c15ce0d890a06815
-odm/lib64/libwvhidl.so|980ee6e32b215a530c0eba41e686ce8d1d24417d
-odm/lib/mediadrm/libwvdrmengine.so|e0573b69f1c16d04dfd7da49892eec76728793bf
+vendor/lib64/libminkdescriptor.so|7175d999c4094ccee0c44d9ff268c41a475c79f7
 
-# WiFi
-vendor/bin/cnss-daemon
+# WiFi cnss - from RMX1851_11_F.05
+vendor/bin/cnss-daemon|3199bdb59f104fe77aec491da75118be6ddf5a1a
 
 # WiFi Display - from PNX - RKQ1.200906.002
 -system/framework/WfdCommon.jar|aa7470dd5ccb2e2c695fd54c3aff01d21e2d7472

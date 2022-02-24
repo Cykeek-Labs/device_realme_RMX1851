@@ -1,0 +1,1 @@
+allow vendor_fm_app vendor_audio_prop:file read;

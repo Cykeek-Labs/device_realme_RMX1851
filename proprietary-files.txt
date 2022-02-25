@@ -46,6 +46,10 @@ vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib/rfsa/adsp/libthread_blur_skel.so
 
+# ANT+ - from RMX1851_11_F.05
+vendor/lib64/com.dsi.ant@1.0.so|d469e9427256e7897be47d31e8a8202eb52a16c4
+vendor/lib/com.dsi.ant@1.0.so|964f1f242e3390f3c41325575f3c97dc2e2b98ee
+
 # Audio
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so

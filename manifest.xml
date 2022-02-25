@@ -212,11 +212,11 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>com.dsi.ant</name>
+        <name>com.qualcomm.qti.ant</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IAnt</name>
+            <name>IAntHci</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -427,7 +427,7 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.bluetooth_sar</name>
         <transport>hwbinder</transport>
-        <version>1.1</version>
+        <version>1.0</version>
         <interface>
             <name>IBluetoothSar</name>
             <instance>default</instance>

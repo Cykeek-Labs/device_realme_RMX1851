@@ -33,6 +33,8 @@ vendor/lib/libmdsprpc.so|e55930607473d3593c66de96f48e1387bdbfd633
 vendor/lib64/rfsa/adsp/libBeautyShot_skel.so
 vendor/lib64/rfsa/adsp/libdsp_streamer_add_constant.so
 vendor/lib64/rfsa/adsp/libdsp_streamer_skel.so
+vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
+vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
 vendor/lib/rfsa/adsp/dirac-capiv2.so
 vendor/lib/rfsa/adsp/dirac_resource.dar
 vendor/lib/rfsa/adsp/dirac_resource_game.dar
@@ -45,10 +47,6 @@ vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib/rfsa/adsp/libthread_blur_skel.so
-
-# ANT+ - from RMX1851_11_F.05
-vendor/lib64/com.dsi.ant@1.0.so|d469e9427256e7897be47d31e8a8202eb52a16c4
-vendor/lib/com.dsi.ant@1.0.so|964f1f242e3390f3c41325575f3c97dc2e2b98ee
 
 # Audio
 vendor/lib64/libacdb-fts.so
@@ -116,50 +114,49 @@ vendor/lib64/vendor.oppo.hardware.ktv@1.0.so
 vendor/lib/hw/vendor.oppo.hardware.ktv@1.0-impl.so
 vendor/lib/vendor.oppo.hardware.ktv@1.0.so
 
-# Bluetooth - from RMX1851_11_F.05
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|275aeb202001803c6bd6d632bf7958c8775468ad
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|5de0946c95e655ac2ab25c0bd7a5f964ca90041b
-vendor/lib64/libbtnv.so|07e031527e60ce5e62a5017fd1d7ff83ef1aafcf
-vendor/lib64/libbt-hidlclient.so|1491414e874419d2df1529c511bd48e348cf53a8
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|a651a66d0a7370d7adac451703a0e09389a02eff
-vendor/lib/libbtnv.so|def5cfd6bc96962911eb6b485b5ce01aec70c6dc
-vendor/lib/libbt-hidlclient.so|4f0a17420cf6b96b3b33ebd39f563072345c54a7
+# Bluetooth
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib64/libbtnv.so
+vendor/lib64/libbt-hidlclient.so
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib/libbtnv.so
+vendor/lib/libbt-hidlclient.so
 
-# Bluetooth (A2DP) - from RMX1851_11_F.05
--odm/etc/vintf/manifest/manifest_oplus_bluetooth_audio.xml|9674a98b82b9247872dcfed5d98f0ce7a05a3b79
-odm/lib64/hw/vendor.oplus.hardware.bluetooth_audio@1.0-impl.so|8402c035c7be1c1b81476c63b02148b9a700801c
-odm/lib64/oplus_btaudio_offload_if.so|8850a78a43573eb357013251994924405d3b4fc2
-odm/lib64/vendor.oplus.hardware.bluetooth_audio@1.0.so|80581aa236aa0caf6f3e6b982362cc55101c5b5e
-odm/lib/hw/vendor.oplus.hardware.bluetooth_audio@1.0-impl.so|80b570592d9e79ee5e554e1152e65b266de86d5a
-odm/lib/oplus_btaudio_offload_if.so|3e9f50fa099bb8ba0e2fda950e0ec5e791bcf7dc
-odm/lib/vendor.oplus.hardware.bluetooth_audio@1.0.so|bd568d83371cde430d983c12155406636518663b
-vendor/lib64/btaudio_offload_if.so|3a596dd1aec2c4bd27656cddc8d5536e2d36cc33
-vendor/lib64/hw/audio.bluetooth_qti.default.so|edf9370638b02196d173d52cd12f12f7a5baa690
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|03a0e277fc46f40c4d497c9e59fc96a93e6b45d7
-vendor/lib64/libbluetooth_audio_session_qti.so|fe114a474ff44baa35536e8f389e1158acbee7b9
-vendor/lib/btaudio_offload_if.so|6988527d63b9fe1cdc083cb9f129fca5afef338b
-vendor/lib/hw/audio.bluetooth_qti.default.so|30b018edfdfa415d382d72ed72dcc308ac33dee0
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|36210c1fd7c950f3d6c0a820e8007181ec9a5f2b
-vendor/lib/libbluetooth_audio_session_qti.so|0a6c892d022abe83d4a03dd2cadf76b4e82e0572
+# Bluetooth (A2DP)
+vendor/lib64/btaudio_offload_if.so
+vendor/lib64/hw/audio.bluetooth_qti.default.so
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
+vendor/lib64/libbluetooth_audio_session_qti.so
+vendor/lib/btaudio_offload_if.so
+vendor/lib/hw/audio.bluetooth_qti.default.so
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
+vendor/lib/libbluetooth_audio_session_qti.so
 
-# Bluetooth (aptX) - from RMX1851_11_F.05
-vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|2c5501568cfeebeed2d37af73909898085c52ad6
-vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|04c53116faed9592573f1dd388935e72724feb5f
+# Bluetooth (aptX)
+vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
+vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
 
-# Bluetooth (Configstore) - from RMX1851_11_F.05
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|2c5480b33615179e1a8a67bf93e190e8647c68b4
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|0abafcc0c404b67bb0d87128a87cc9deabe54935
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|c66a9333d001cb7a80d89eec48c5faf852487723
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|509da708577441d52834340377b3c6ccde399b7d
+# Bluetooth (Configstore)
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 
-# Bluetooth (SAR) - from RMX1851_11_F.05
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|a97a6c330c932176acee0bce820c6e737778aed4
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|d1443e04e24cb45dd06f5d222b22a699c9e82cb1
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|1671815a79dab0fde9248d0851085ec1ab314f64
-vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|61c91107a4032634f1520340e75f015e44fd8dbc
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|7e4587a1ac13de4d1ee8463b3aae487346f31b12
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so|fbce94fed6a22fd527506d14d10a4df785b8fa25
+# Bluetooth (SAR)
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
+
+# Bluetooth (Oppo A2DP)
+vendor/lib64/hw/vendor.oppo.hardware.bluetooth_audio@1.0-impl.so
+vendor/lib64/vendor.oppo.hardware.bluetooth_audio@1.0.so
+vendor/lib/hw/vendor.oppo.hardware.bluetooth_audio@1.0-impl.so
+vendor/lib/vendor.oppo.hardware.bluetooth_audio@1.0.so
+
+# Bluetooth (shared dependencies)
+vendor/lib64/com.qualcomm.qti.ant@1.0.so
+vendor/lib/com.qualcomm.qti.ant@1.0.so
 
 # Camera
 lib64/libseemore.so

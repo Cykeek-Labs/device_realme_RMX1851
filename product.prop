@@ -12,3 +12,8 @@ ro.lmk.log_stats=true
 
 # Seamless transfer
 sys.fflag.override.settings_seamless_transfer=true
+
+# enable debugging
+persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
+ro.debuggable=1

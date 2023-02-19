@@ -37,6 +37,8 @@ ro.oppo.market.enname               u:object_r:vendor_camera_prop:s0
 ro.oppo.market.name                 u:object_r:vendor_camera_prop:s0
 sys.oppo_ftm_mode                   u:object_r:vendor_camera_prop:s0
 vendor.oppo.camera.                 u:object_r:vendor_camera_prop:s0
+ro.camera.req.fmq.size              u:object_r:vendor_camera_prop:s0
+ro.camera.res.fmq.size              u:object_r:vendor_camera_prop:s0
 
 # Display
 persist.cabc_profile                u:object_r:vendor_display_prop:s0

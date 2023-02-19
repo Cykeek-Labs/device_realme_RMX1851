@@ -27,7 +27,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.set_touch_timer_ms=200 \
     ro.surface_flinger.use_color_management=true \
     ro.config.avoid_gfx_accel=true \
-    ro.surface_flinger.use_content_detection_for_refresh_rate=true
+    ro.surface_flinger.use_content_detection_for_refresh_rate=true \
+    camera.disable_zsl_mode=1 \
 
 # Enable app/sf phase offset as durations. The numbers below are translated from the existing
 # positive offsets by finding the duration app/sf will have with the offsets.

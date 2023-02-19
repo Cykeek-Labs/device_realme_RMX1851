@@ -286,6 +286,7 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml \
     lib-imsvtshim \
+    android.hardware.drm
 
 # IMS
 PRODUCT_PACKAGES += \

@@ -36,6 +36,10 @@ ro.camera.hfr.enable=1
 ro.camera.relight.enable=0
 ro.camera.attr.detect.enable=1
 
+# Charger
+ro.charger.disable_init_blank=true
+ro.charger.enable_suspend=true
+
 # Data modules
 persist.data.netmgrd.qos.enable=true
 persist.vendor.data.mode=concurrent

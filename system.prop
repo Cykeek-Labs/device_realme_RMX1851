@@ -45,6 +45,9 @@ ro.vendor.use_data_netmgrd=true
 pm.dexopt.first-boot=quicken
 pm.dexopt.boot=verify
 
+# Disable remote keyguard animation
+persist.wm.enable_remote_keyguard_animation=0
+
 # Display
 debug.sdm.support_writeback=0
 ro.qualcomm.cabl=0

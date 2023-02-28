@@ -75,6 +75,7 @@ vendor.iop.enable_uxe=1
 
 # LMK
 ro.lmk.kill_timeout_ms=50
+ro.lmk.stall_limit_critical=40
 
 # Media
 debug.stagefright.omx_default_rank.sw-audio=1

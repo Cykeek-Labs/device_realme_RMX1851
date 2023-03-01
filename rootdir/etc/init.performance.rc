@@ -1,67 +1,47 @@
-on init
-    # Set default schedTune value for foreground/top-app
-    write /dev/stune/foreground/schedtune.prefer_idle 1
-    write /dev/stune/top-app/schedtune.boost 10
-    write /dev/stune/top-app/schedtune.prefer_idle 1
-
 on boot
     # Disable performance profile by default
     setprop perf_profile 0
 
-    # Disable console_suspend to get better logging for kernel crashes
-    write /sys/module/printk/parameters/console_suspend N
-
-    # Setup final cpuset
-    write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/foreground/cpus 0-5,7
-    write /dev/cpuset/background/cpus 4-5
-    write /dev/cpuset/system-background/cpus 2-5
-    write /dev/cpuset/restricted/cpus 2-5
-
-on property:sys.boot_completed=1
-    # Enable PowerHAL hint processing
-    setprop vendor.powerhal.init 1
-
-on post-fs
-    # Disable sched autogroup
-    write /proc/sys/kernel/sched_autogroup_enabled 0
-
 # Balanced
 on property:perf_profile=0
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1708800
-    write /sys/devices/system/cpu/cpu6/cpufreq/scaling_max_freq 2208000
+    write /sys/devices/system/cpu/cpu6/cpufreq/scaling_max_freq 2208800
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 300000
     write /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq 300000
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor blu_schedutil
+    write /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor blu_schedutil
 
-    write /sys/module/cpu_boost/parameters/input_boost_freq "0:1209600"
-    write /sys/module/cpu_boost/parameters/input_boost_ms 20
+    write /dev/stune/top-app/schedtune.boost 0
+
+    write /sys/module/cpu_boost/parameters/input_boost_freq "0:1612800 6:1132800"
+    write /sys/module/cpu_boost/parameters/input_boost_ms 500
 
     write /sys/class/kgsl/kgsl-3d0/devfreq/min_freq 180000000
-    write /sys/class/kgsl/kgsl-3d0/devfreq/max_freq 430000000
-    write /sys/class/kgsl/kgsl-3d0/default_pwrlevel 4
+    write /sys/class/kgsl/kgsl-3d0/devfreq/max_freq 504000000
+    write /sys/class/kgsl/kgsl-3d0/min_pwrlevel 3
+    write /sys/class/kgsl/kgsl-3d0/dev_freq/governor cpufreq
 
-    write /proc/sys/kernel/sched_downmigrate "90"
-    write /proc/sys/kernel/sched_upmigrate "96"
-
-    write /proc/sys/kernel/sched_upmigrate "96"
-    write /proc/sys/kernel/sched_downmigrate "90"
+    write /proc/sys/kernel/sched_downmigrate "78"
+    write /proc/sys/kernel/sched_upmigrate "93"
 
 # Gaming
 on property:perf_profile=1
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1708800
     write /sys/devices/system/cpu/cpu6/cpufreq/scaling_max_freq 2208000
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 1708800
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 1708000
     write /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq 2208000
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor schedutil
+    write /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor schedutil
 
-    write /sys/module/cpu_boost/parameters/input_boost_freq "0:1209600"
-    write /sys/module/cpu_boost/parameters/input_boost_ms 20
+    write /dev/stune/top-app/schedtune.boost 100
 
-    write /sys/class/kgsl/kgsl-3d0/devfreq/min_freq 180000000
+    write /sys/module/cpu_boost/parameters/input_boost_freq "0:1708800 6:2208000"
+    write /sys/module/cpu_boost/parameters/input_boost_ms 60000
+
+    write /sys/class/kgsl/kgsl-3d0/devfreq/min_freq 504000000
     write /sys/class/kgsl/kgsl-3d0/devfreq/max_freq 504000000
-    write /sys/class/kgsl/kgsl-3d0/default_pwrlevel 2
+    write /sys/class/kgsl/kgsl-3d0/min_pwrlevel 1
+    write /sys/class/kgsl/kgsl-3d0/dev_freq/governor cpufreq
 
-    write /proc/sys/kernel/sched_upmigrate "20"
-    write /proc/sys/kernel/sched_downmigrate "10"
-
-    write /proc/sys/kernel/sched_downmigrate "10"
-    write /proc/sys/kernel/sched_upmigrate "20"
+    write /proc/sys/kernel/sched_upmigrate "10"
+    write /proc/sys/kernel/sched_downmigrate "5"

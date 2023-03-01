@@ -115,9 +115,10 @@
       "Name": "TASchedtuneBoost",
       "Path": "/dev/stune/top-app/schedtune.boost",
       "Values": [
-        "50",
-        "10"
+        "0",
+        "100"
       ],
+      "DefaultIndex": 1,
       "ResetOnInit": true
     },
     {
@@ -262,7 +263,7 @@
       "PowerHint": "INTERACTION",
       "Node": "TASchedtuneBoost",
       "Duration": 0,
-      "Value": "50"
+      "Value": "0"
     },
     {
       "PowerHint": "INTERACTION",
@@ -389,6 +390,18 @@
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 2000,
       "Value": "67"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "TASchedtuneBoost",
+      "Duration": 0,
+      "Value": "0"
+    },
+     {
+      "PowerHint": "GAMING",
+      "Node": "TASchedtuneBoost",
+      "Duration": 0,
+      "Value": "100"
     },
     {
       "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",

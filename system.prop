@@ -88,6 +88,9 @@ ro.vendor.qti.sys.fw.bservice_enable=true
 # Netflix custom property
 ro.netflix.bsp_rev=Q670-14477-1
 
+# Perf
+vendor.perf.gestureflingboost.enable=true
+
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
 

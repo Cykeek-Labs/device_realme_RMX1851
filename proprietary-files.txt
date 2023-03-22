@@ -785,16 +785,16 @@ vendor/lib64/libqcbor.so
 vendor/lib64/libqtikeymaster4.so
 
 # Latency
--product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar
--product/framework/vendor.qti.latency-V2.0-java.jar
-product/lib/vendor.qti.hardware.data.latency@1.0.so
-product/lib/vendor.qti.latency@2.0.so
-product/lib64/vendor.qti.hardware.data.latency@1.0.so
-product/lib64/vendor.qti.latency@2.0.so
-vendor/lib/vendor.qti.hardware.data.latency@1.0.so
-vendor/lib/vendor.qti.latency@2.0.so
-vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
-vendor/lib64/vendor.qti.latency@2.0.so
+-product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar|c6c5d5bbf50b068df0184aef8551b95daa5f4791
+-product/framework/vendor.qti.latency-V2.0-java.jar|d345e24271b83faecdb1abe1361db812fae0646f
+product/lib/vendor.qti.hardware.data.latency@1.0.so|dda494c3b0cd7e1aa7a188326af0871a58fb04d3
+product/lib/vendor.qti.latency@2.0.so|8f40a74ac732a0c5d1544b726535ad92cdc07faf
+product/lib64/vendor.qti.hardware.data.latency@1.0.so|3590dc63798bfb629c10acb5f3ee55c08f236e0d
+product/lib64/vendor.qti.latency@2.0.so|36f1729c089bc0e328746b74e002bd66d7646d1a
+vendor/lib/vendor.qti.hardware.data.latency@1.0.so|c6a48878abeabc608e230f22f01df846c1b0f037
+vendor/lib/vendor.qti.latency@2.0.so|e3a45388a314ca603c32c61ebe397e284956e8f7
+vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|5e3c015fe52514417da53e16e986e5c61bda5fe5
+vendor/lib64/vendor.qti.latency@2.0.so|c939c4dca106fa33fb0132a39b70a79566d6491c
 
 # Listen
 vendor/lib/libadpcmdec.so

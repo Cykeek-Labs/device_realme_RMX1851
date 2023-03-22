@@ -508,11 +508,30 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
-# Fingerprint - from RMX1851EX_11_C.15
+# Fingerprint - from RMX1851EX_11_C.18
+vendor/bin/hw/vendor.oppo.hardware.biometrics.face@1.0-service|573757dac8ba52ff3f6b37d815fa21b61a366f2c
 vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service|f6badbda0d0112fe9a11d0f43420ed6b4ec1b629
+vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprintpay@1.0-service|db5ca5b65500eec6b925848965da91ea18a46198
 vendor/bin/qfp-daemon|e9ad5c26f605cc046f351a08ec3bcdca03218ce4
+vendor/etc/init/vendor.oppo.hardware.biometrics.face@1.0-service.rc|54c194015b0c5cf2692ba999f14d08ff8b132017
 vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc|9fef9ca759ce13c45b43f8c7fdf5e395e47db8c7
+vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprintpay@1.0-service.rc|da2ddf4a6b47e31cb0c22194511b072cd248356b
 vendor/etc/permissions/qti_fingerprint_interface.xml|d3efc0abac8c064b3f8ccd783875b3d532972212
+vendor/etc/permissions/vendor-oppo-hardware.biometrics.fingerprintpay.xml|cdbd1c0585b2f3d40f2936a8ccf341e0a4601a2b
+vendor/lib/hw/fingerprint.goodix_G2.default.so|804586884e70a025b6dab120c43e039ca1f68c77
+vendor/lib/hw/fingerprint.goodix_G3.default.so|d7e9d4ccae5296c5a3134c9b1edc89a9c23b0c9b
+vendor/lib/libarm_proxy_skel.so|ede01a6e7939c30f8fdc1c318dd84e69b751bacf
+vendor/lib/libgf_hal_G2.so|a479c33c62e0cf0ea6514f9a0dbef405e0a044c4
+vendor/lib/libgf_hal_G3.so|370356b882f1e3ea8ae1ebfeada5ce2fbf72fc36
+vendor/lib/libhvx_proxy_stub.so|ec8377a514a906078efe2f4a441136c151dc66de
+vendor/lib/vendor.oppo.hardware.biometrics.face@1.0.so|cccb079020262bee9523d32a6743a13b2ba2b6c0
+vendor/lib64/hw/fingerprint.goodix_G2.default.so|a606e7a6083d96f5449f548ffdf9042a37c79c58
+vendor/lib64/hw/fingerprint.goodix_G3.default.so|f7fc65892bc2cb7a7b6d9c85f50aeb1888373fbc
+vendor/lib64/libarm_proxy_skel.so|e347fbee45b38c5186b876da2602cd4acc20ce8b
+vendor/lib64/libgf_hal_G2.so|6cb12a172f4a7a7218c0bfc80bc5611ef078e8f8
+vendor/lib64/libgf_hal_G3.so|e6dd7a3bef767d03286f21799aa5af52b37b0a5f
+vendor/lib64/libhvx_proxy_stub.so|7ecd59fcd59f3c1d4add2efcf40db9b015a5cfe4
+vendor/lib64/vendor.oppo.hardware.biometrics.fingerprintpay@1.0.so|9bf1532c6e20c71d4082d48541003869f97d6375
 vendor/lib64/android.frameworks.fingerprintservice@1.0.so|4c555ac172b4addccee51c28c7bb6a213d5083f7
 vendor/lib64/libqfp-service.so|4b929031d849f341d657d672ef7e17c25e652e6e
 vendor/lib64/vendor.oppo.hardware.commondcs@1.0.so|8cc474a526dfc038afe7164b31405438e41ef9b7

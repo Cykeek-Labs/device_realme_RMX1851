@@ -1212,7 +1212,12 @@ vendor/bin/subsystem_ramdump
 vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
 vendor/etc/thermal-engine.conf
-vendor/lib64/libthermalclient.so
+vendor/lib/libthermalclient.so|900a957e542c2dfeee572418eff24f32dfdce818
+vendor/lib64/libthermalclient.so|11f008e2a8fe51ca67637e7aaeefaf7f276a882c
+
+# Thermal-Hardware
+vendor/lib/hw/thermal.sdm710.so|8d5752bce452f334a2b8a974e119121a5762988a
+vendor/lib64/hw/thermal.sdm710.so|fc2e176e2ac4a5e93c28978ac84f80c14440517f
 
 # Time services
 -vendor/app/TimeService/TimeService.apk

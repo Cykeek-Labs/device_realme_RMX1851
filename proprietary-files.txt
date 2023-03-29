@@ -338,6 +338,9 @@ vendor/lib/rfsa/adsp/libdepthmap_skel.so|b763ef53e1dfd30963f7a0a26dea7753f24e192
 # Camera firmware - from RMX1851EX_11_C.15
 vendor/firmware/CAMERA_ICP.elf|51e9b74fb72ce0a1917251b34099c523404b2ba6
 
+# Camera-motor - from RMX1851EX_11.C.18
+vendor/etc/init/hw/init.oppo.vendor.motor.rc|cb9b454a2a2da5dd40718f1df4cfe905c423aa18
+
 # Camera - oppoAlgoProcessService - from RMX1851EX_11_C.15
 vendor/bin/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-service|9a7c7aabe8f8ff485a30b5cf458179cc2352af27
 vendor/etc/init/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-service.rc|808b9e06f956919552c97febef137121bf42475f

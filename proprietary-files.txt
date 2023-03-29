@@ -1230,6 +1230,13 @@ odm/firmware/tp/18621/FW_OPPO_TP_NOFLASH_DSJM.img:vendor/firmware/tp/18621/FW_HX
 odm/firmware/tp/18621/FW_OPPO_TP_NOFLASH_DSJM_FAE.img:vendor/firmware/tp/18621/FW_HX_NF83112A_DSJM_FAE.img
 odm/firmware/tp/18621/FW_OPPO_TP_NOFLASH_DSJM_TEST.img:vendor/firmware/tp/18621/FW_HX_NF83112A_DSJM_TEST.img
 
+# Touch-improve
+-vendor/app/com.qualcomm.qti.improvetouch.service/com.qualcomm.qti.improvetouch.service.apk
+vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so
+vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
+vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so
+vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
+
 # Trusted Execution Environment connector
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc

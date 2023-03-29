@@ -131,7 +131,7 @@ void vendor_load_properties()
         /* CHINA */
         if ((Trim(operator_name) == "8")) {
         device = "RMX1851CN";
-           property_override("ro.build.fingerprint", "google/cheetah/cheetah:13/TD1A.221105.001/9104446:user/release-keys");
+           property_override("ro.build.fingerprint", "Realme/RMX1851/RMX1851:11/RKQ1.201217.002/1632356164254:user/release-keys");
            property_override("ro.build.product", device.c_str());
            property_override("ro.boot.verifiedbootstate", "green");
            for (const auto &source : ro_props_default_source_order) {
@@ -142,7 +142,7 @@ void vendor_load_properties()
         /* FOREIGN */
         } else if ((Trim(operator_name) == "30")) {
         device = "RMX1851";
-           property_override("ro.build.fingerprint", "google/cheetah/cheetah:13/TD1A.221105.001/9104446:user/release-keys");
+           property_override("ro.build.fingerprint", "Realme/RMX1851/RMX1851:11/RKQ1.201217.002/1632356164254:user/release-keys");
            property_override("ro.build.product", device.c_str());
            property_override("ro.boot.verifiedbootstate", "green");
            for (const auto &source : ro_props_default_source_order) {
@@ -155,7 +155,7 @@ void vendor_load_properties()
         /* FOREIGN INDIA */
         } else if ((Trim(operator_name) == "31")) {
         device = "RMX1851";
-           property_override("ro.build.fingerprint", "google/cheetah/cheetah:13/TD1A.221105.001/9104446:user/release-keys");
+           property_override("ro.build.fingerprint", "Realme/RMX1851/RMX1851:11/RKQ1.201217.002/1632356164254:user/release-keys");
            property_override("ro.build.product", device.c_str());
            property_override("ro.boot.verifiedbootstate", "green");
            for (const auto &source : ro_props_default_source_order) {
@@ -168,7 +168,7 @@ void vendor_load_properties()
         /* VIETNAM_128GB */
         } else if ((Trim(operator_name) == "32")) {
         device = "RMX1853";
-           property_override("ro.build.fingerprint", "google/cheetah/cheetah:13/TD1A.221105.001/9104446:user/release-keys");
+           property_override("ro.build.fingerprint", "Realme/RMX1851/RMX1851:11/RKQ1.201217.002/1632356164254:user/release-keys");
            property_override("ro.build.product", device.c_str());
            property_override("ro.boot.verifiedbootstate", "green");
            for (const auto &source : ro_props_default_source_order) {
@@ -181,7 +181,7 @@ void vendor_load_properties()
         /* VIETNAM_64GB */
         } else if ((Trim(operator_name) == "33")) {
         device = "RMX1855";
-           property_override("ro.build.fingerprint", "google/cheetah/cheetah:13/TD1A.221105.001/9104446:user/release-keys");
+           property_override("ro.build.fingerprint", "Realme/RMX1851/RMX1851:11/RKQ1.201217.002/1632356164254:user/release-keys");
            property_override("ro.build.product", device.c_str());
            property_override("ro.boot.verifiedbootstate", "green");
            for (const auto &source : ro_props_default_source_order) {
@@ -194,7 +194,7 @@ void vendor_load_properties()
         /* FOREIGN EUROPE*/
         } else if ((Trim(operator_name) == "34")) {
         device = "RMX1851";
-           property_override("ro.build.fingerprint", "google/cheetah/cheetah:13/TD1A.221105.001/9104446:user/release-keys");
+           property_override("ro.build.fingerprint", "Realme/RMX1851/RMX1851:11/RKQ1.201217.002/1632356164254:user/release-keys");
            property_override("ro.build.product", device.c_str());
            property_override("ro.boot.verifiedbootstate", "green");
            for (const auto &source : ro_props_default_source_order) {

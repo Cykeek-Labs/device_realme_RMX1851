@@ -1229,6 +1229,21 @@ vendor/lib64/libtime_genoff.so
 odm/firmware/tp/18621/FW_OPPO_TP_NOFLASH_DSJM.img:vendor/firmware/tp/18621/FW_HX_NF83112A_DSJM.img
 odm/firmware/tp/18621/FW_OPPO_TP_NOFLASH_DSJM_FAE.img:vendor/firmware/tp/18621/FW_HX_NF83112A_DSJM_FAE.img
 odm/firmware/tp/18621/FW_OPPO_TP_NOFLASH_DSJM_TEST.img:vendor/firmware/tp/18621/FW_HX_NF83112A_DSJM_TEST.img
+vendor/etc/hbtp/hbtpcfg.dat|5e1fa7bd844069d712dc5a5d14313fe095df4409
+vendor/etc/hbtp/hbtpcfg_sdm710_800h_qhd.dat|303f14bebaa271f8016df91cea41c18a85121a28
+vendor/etc/hbtp/hbtpcfg_sdm710_800s_fhd.dat|f9323db6ab1580d0dd06240da7b08dcd06695d50
+vendor/etc/hbtp/hbtpcfg_sdm710_801s_2k.dat|8ed8953c794442b1d046e4d7aefc08f896a3f9f8
+vendor/etc/hbtp/hbtpcfg_sdm710_801s_qhd.dat|bed5055fe3193eb251a8ea05525c7f8a25ad7f17
+vendor/etc/hbtp/loader.cfg|d40c3c93b548994205c06887b56f6e327033ed57
+vendor/etc/hbtp/qtc800h.bin|7c9c4a06f059ba08e65e02a339ee6d40c4dd5516
+vendor/etc/hbtp/qtc800s_dsp.bin|5a14812ef2f02836e4d44338098a6ae47409b912
+vendor/etc/hbtp/qtc801s.bin|aeed780565fe45f1ffc196e1cd01808fd61ba9b8
+vendor/lib/libhbtpclient.so|6a86da6e0cb0c215579f79737bc9c3e0a2b4c35e
+vendor/lib/libhbtpdsp.so|fe640efa2b99e686cd01a76c51227c517518634d
+vendor/lib/libhbtpfrmwk.so|51d2ca202a71e6ea478ca5d23f3a43bbc2ce6466
+vendor/lib64/libhbtpclient.so|68a460a4a8659e5b56ea4725768872f30e3cf099
+vendor/lib64/libhbtpdsp.so|881307ab5752137b525f22ec21ea2904bf808a16
+vendor/lib64/libhbtpfrmwk.so|8cb397db57108c8f2293314241b131ac6d6627b
 
 # Touch-improve
 -vendor/app/com.qualcomm.qti.improvetouch.service/com.qualcomm.qti.improvetouch.service.apk

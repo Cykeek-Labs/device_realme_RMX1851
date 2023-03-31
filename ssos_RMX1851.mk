@@ -6,18 +6,20 @@
 
 $(call inherit-product, device/realme/RMX1851/device.mk)
 
-# Inherit some common octavi stuff.
-$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
+# Inherit some common ssos stuff.
+$(call inherit-product, vendor/ssos/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := octavi_RMX1851
+PRODUCT_NAME := ssos_RMX1851
 PRODUCT_DEVICE := RMX1851
 PRODUCT_BRAND := Realme
 PRODUCT_MODEL := realme 3 Pro
 PRODUCT_MANUFACTURER := Realme
 
-OCTAVI_BUILD_TYPE := Unofficial
-OCTAVI_DEVICE_MAINTAINER := Rishi
+# BootAnimation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 BUILD_FINGERPRINT := "google/raven/raven:12/SQ1D.220205.003/8069835:user/release-keys"
 

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The octaviOS Project
+# Copyright (C) 2019 The ShapeShiftOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/octavi_RMX1851.mk
+    $(LOCAL_DIR)/ssos_RMX1851.mk
 
 COMMON_LUNCH_CHOICES := \
-    octavi_RMX1851-user \
-    octavi_RMX1851-userdebug \
-    octavi_RMX1851-eng
+    ssos_RMX1851-user \
+    ssos_RMX1851-userdebug \
+    ssos_RMX1851-eng

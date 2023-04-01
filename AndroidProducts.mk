@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ssos_RMX1851.mk
+    $(LOCAL_DIR)/havoc_RMX1851.mk
 
 COMMON_LUNCH_CHOICES := \
-    ssos_RMX1851-user \
-    ssos_RMX1851-userdebug \
-    ssos_RMX1851-eng
+    havoc_RMX1851-user \
+    havoc_RMX1851-userdebug \
+    havoc_RMX1851-eng

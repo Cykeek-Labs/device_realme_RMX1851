@@ -122,7 +122,6 @@ ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
 debug.hwui.renderer=opengl
-debug.renderengine.backend=skiaglthreaded
 renderthread.skia.reduceopstasksplitting=true
 vendor.gralloc.disable_ahardware_buffer=1
 debug.hwui.use_hint_manager=true

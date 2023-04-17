@@ -33,4 +33,7 @@
 
     <!-- Preferred max refresh rate at AOD & Ambient Display, if supported by the display. -->
     <integer name="config_aodMaxRefreshRate">25</integer>
+
+    <!-- Whether global actions should show an informational message about changes in S -->
+    <bool name="global_actions_show_change_info">true</bool>
 </resources>

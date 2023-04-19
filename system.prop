@@ -131,6 +131,9 @@ persist.data.iwlan.rekey=4294967295
 # Storage.xml moment
 persist.sys.binary_xml=false
 
+# System Server
+arm64.memtag.process.system_server=off
+
 # WFD
 persist.sys.wfd.virtual=0
 media.wfd.max_resolution=5

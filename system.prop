@@ -30,6 +30,7 @@ persist.bluetooth.disableabsvol=true
 persist.vendor.btstack.enable.splita2dp=true
 qcom.bluetooth.soc=cherokee
 vendor.bluetooth.soc=cherokee
+bluetooth.le.disable_apcf_extended_features=1
 
 # Better Ram Management
 ro.config.fha_enable=true

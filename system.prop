@@ -1,5 +1,6 @@
 # Art
 dalvik.vm.dex2oat64.enabled=true
+ro.dex2oat_white_list=com.google.android.gms
 dalvik.vm.boot-dex2oat-cpu-set=0,1,6,7
 dalvik.vm.boot-dex2oat-threads=4
 dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7

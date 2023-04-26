@@ -197,6 +197,7 @@ PRODUCT_PACKAGES += \
     init.qti.qseecomd.sh \
     init.recovery.qcom.rc \
     init.target.rc \
+    init.bootlogs.rc \
     ueventd.qcom.rc
 
 # Context Hub

@@ -286,7 +286,8 @@ PRODUCT_PACKAGES += \
     libloc_core \
     libloc_pla_headers \
     liblocation_api_headers \
-    liblocation_api
+    liblocation_api \
+    liblocdiagiface
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/seccomp_policy/gnss@2.0-base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-base.policy \

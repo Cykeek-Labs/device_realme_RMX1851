@@ -1,0 +1,1 @@
+allow logdump_partition logdump_partition:lnk_file { relabelto };

@@ -422,6 +422,8 @@ on property:ro.vendor.iocgrp.config=1
     chmod 0664 /dev/blkio/bg/tasks
     write /dev/blkio/blkio.weight 1000
     write /dev/blkio/bg/blkio.weight 200
+    write /dev/blkio/blkio.group_idle 2000
+    write /dev/blkio/background/blkio.group_idle 0
 
 on property:persist.vendor.sys.ssr.enable_debug=*
     write /sys/module/subsystem_restart/parameters/enable_debug ${persist.vendor.sys.ssr.enable_debug}

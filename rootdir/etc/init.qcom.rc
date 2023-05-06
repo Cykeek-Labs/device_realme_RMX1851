@@ -570,6 +570,10 @@ service vendor-sensor-sh /vendor/bin/init.qcom.sensors.sh
     oneshot
     disabled
 
+on property:sys.boot_completed=1
+    # Start perf
+    setprop vendor.post_boot.parsed 1
+
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
 

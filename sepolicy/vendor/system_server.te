@@ -1,1 +1,14 @@
 allow system_server default_prop:property_service { set };
+
+dontaudit system_server sysfs:file r_file_perms;
+dontaudit system_server app_zygote:process getpgid;
+
+allow system_server oppo_ver_proc:dir search;
+allow system_server proc_devinfo:dir search;
+allow system_server proc_touchpanel:dir search;
+allow system_server proc_touchpanel:file rw_file_perms;
+allow system_server sysfs_battery_supply:file { read open getattr };
+allow system_server sysfs_usb_supply:file { read open getattr };
+allow system_server sysfs_rtc:file r_file_perms;
+allow system_server app_zygote:process getpgid;
+allow system_server proc_last_kmsg:file r_file_perms;

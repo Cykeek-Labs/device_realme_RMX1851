@@ -10,6 +10,9 @@ genfscon proc /fp_id                                                       u:obj
 # Flash
 genfscon proc /qcom_flash                                                  u:object_r:cam_proc:s0
 
+# kmsg
+genfscon proc /last_kmsg                                                   u:object_r:proc_last_kmsg:s0
+
 # Project version
 genfscon proc /oppoVersion                                                 u:object_r:oppo_ver_proc:s0
 

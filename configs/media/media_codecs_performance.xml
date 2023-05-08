@@ -90,6 +90,12 @@ limitations under the License.
         <MediaCodec name="c2.android.mpeg4.encoder" type="video/mp4v-es" update="true">
             <Limit name="measured-frame-rate-176x144" range="180-180" />
         </MediaCodec>
+        <MediaCodec name="c2.android.vp9.encoder" type="video/x-vnd.on2.vp9" update="true">
+            <Limit name="measured-frame-rate-320x180" range="82-180" />
+            <Limit name="measured-frame-rate-640x360" range="31-68" />
+            <Limit name="measured-frame-rate-1280x720" range="8-18" />
+            <Limit name="measured-frame-rate-1920x1080" range="4-8" />
+        </MediaCodec>
         <MediaCodec name="c2.android.hevc.encoder" type="video/hevc" update="true">
             <Limit name="measured-frame-rate-320x240" range="28-30" />
         </MediaCodec>

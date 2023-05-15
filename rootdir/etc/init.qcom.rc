@@ -458,6 +458,11 @@ on property:persist.vendor.ssr.enable_ramdumps=1
 on property:persist.vendor.ssr.enable_ramdumps=0
     write /sys/module/subsystem_restart/parameters/enable_ramdumps 0
 
+    # Create PERFD deamon related dirs
+    mkdir /data/vendor/perfd 0770 root system
+    chmod 2770 /data/vendor/perfd
+    rm /data/vendor/perfd/default_values
+
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
     # Reset read ahead for dm-0, dm-1 and dm-2 to 512kb

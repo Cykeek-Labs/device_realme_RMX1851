@@ -528,15 +528,15 @@ vendor/lib/libgf_hal_G2.so|a479c33c62e0cf0ea6514f9a0dbef405e0a044c4
 vendor/lib/libgf_hal_G3.so|370356b882f1e3ea8ae1ebfeada5ce2fbf72fc36
 vendor/lib/libhvx_proxy_stub.so|ec8377a514a906078efe2f4a441136c151dc66de
 vendor/lib/vendor.oppo.hardware.biometrics.face@1.0.so|cccb079020262bee9523d32a6743a13b2ba2b6c0
+vendor/lib64/android.frameworks.fingerprintservice@1.0.so|4c555ac172b4addccee51c28c7bb6a213d5083f7
 vendor/lib64/hw/fingerprint.goodix_G2.default.so|a606e7a6083d96f5449f548ffdf9042a37c79c58
 vendor/lib64/hw/fingerprint.goodix_G3.default.so|f7fc65892bc2cb7a7b6d9c85f50aeb1888373fbc
 vendor/lib64/libarm_proxy_skel.so|e347fbee45b38c5186b876da2602cd4acc20ce8b
 vendor/lib64/libgf_hal_G2.so|6cb12a172f4a7a7218c0bfc80bc5611ef078e8f8
 vendor/lib64/libgf_hal_G3.so|e6dd7a3bef767d03286f21799aa5af52b37b0a5f
 vendor/lib64/libhvx_proxy_stub.so|7ecd59fcd59f3c1d4add2efcf40db9b015a5cfe4
-vendor/lib64/vendor.oppo.hardware.biometrics.fingerprintpay@1.0.so|9bf1532c6e20c71d4082d48541003869f97d6375
-vendor/lib64/android.frameworks.fingerprintservice@1.0.so|4c555ac172b4addccee51c28c7bb6a213d5083f7
 vendor/lib64/libqfp-service.so|4b929031d849f341d657d672ef7e17c25e652e6e
+vendor/lib64/vendor.oppo.hardware.biometrics.fingerprintpay@1.0.so|9bf1532c6e20c71d4082d48541003869f97d6375
 vendor/lib64/vendor.oppo.hardware.commondcs@1.0.so|8cc474a526dfc038afe7164b31405438e41ef9b7
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|282ec03891e7a2fa079ef82a7a4f1320df6abac7
 
@@ -1299,11 +1299,11 @@ odm/lib/mediadrm/libwvdrmengine.so
 odm/lib64/liboemcrypto.so
 odm/lib64/libwvhidl.so
 odm/lib64/mediadrm/libwvdrmengine.so
+vendor/lib/libtrustedapploader.so|3d5062a5eb986d38483966a8b3988abdd3f6ae9c
 vendor/lib64/libhdcp1prov.so
 vendor/lib64/libhdcp2p2prov.so
 vendor/lib64/libhdcpsrm.so
 vendor/lib64/libminkdescriptor.so
-vendor/lib/libtrustedapploader.so|3d5062a5eb986d38483966a8b3988abdd3f6ae9c
 vendor/lib64/libtrustedapploader.so|fbd6f6db5b91357a5cc6d621d3ce48ba27ec3f75
 
 # WiFi cnss

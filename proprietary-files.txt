@@ -1306,6 +1306,7 @@ vendor/lib64/libhdcp2p2prov.so
 vendor/lib64/libhdcpsrm.so
 vendor/lib64/libminkdescriptor.so
 vendor/lib64/libtrustedapploader.so|fbd6f6db5b91357a5cc6d621d3ce48ba27ec3f75
+vendor/lib64/libspl.so|0cf185c22519bbae1e1232928fda151f538f9977
 
 # WiFi cnss
 vendor/bin/cnss-daemon

@@ -163,7 +163,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0 \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0 \
-    vendor.qti.hardware.btconfigstore@2.0.vendor
+    vendor.qti.hardware.btconfigstore@2.0.vendor \
+    libbthost_if \
+    libbthost_if.vendor \
+    libldacBT_bco.vendor \
 
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.bluetooth.modem_nv_support=true

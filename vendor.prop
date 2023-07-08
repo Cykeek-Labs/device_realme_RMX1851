@@ -184,7 +184,7 @@ persist.vendor.radio.enableadvancedscan=false
 persist.sys.fflag.override.settings_provider_model=false
 
 # SoC
-ro.soc.manufacturer=Qualcomm
+ro.soc.manufacturer=QTI
 ro.soc.model=SDM710
 
 # System

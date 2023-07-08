@@ -85,7 +85,7 @@ ro.vendor.display.cabl=2
 ro.vendor.display.sensortype=2
 vendor.display.enable_default_color_mode=1
 debug.force_no_blanking=true
-debug.sf.enable_gl_backpressure=1
+debug.sf.disable_gl_backpressure=1
 
 # DPM
 persist.vendor.dpmhalservice.enable=1
@@ -132,7 +132,6 @@ renderthread.skia.reduceopstasksplitting=true
 vendor.gralloc.disable_ahardware_buffer=1
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
-debug.sf.disable_backpressure=0
 debug.cpurend.vsync=true
 ro.config.avoid_gfx_accel=true
 debug.sf.enable_egl_image_tracker=1

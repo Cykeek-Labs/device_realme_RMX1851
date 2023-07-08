@@ -102,7 +102,7 @@ on boot
     write /dev/stune/camera-daemon/schedtune.boost 0
 
 # Enable suspend to RAM
-    write /sys/power/mem_sleep "deep"
+    write /sys/power/mem_sleep "s2idle"
 
 # default country code
     setprop ro.boot.wificountrycode 00

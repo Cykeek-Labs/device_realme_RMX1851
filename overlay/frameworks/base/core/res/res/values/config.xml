@@ -927,6 +927,9 @@
         <item>10</item>
     </integer-array>
 
+    <!-- Default value for performant auth feature. -->
+    <bool name="config_performantAuthDefault">true</bool>
+
     <!-- The default intensity level for alarm vibrations. See
          Settings.System.ALARM_VIBRATION_INTENSITY more details on the constant values and
          meanings. -->

@@ -218,8 +218,6 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.3-service:64 \
-    android.hardware.graphics.mapper@2.0-impl-qti-display \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     gralloc.sdm710 \
@@ -230,7 +228,11 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.9 \
     vendor.display.config@1.9.vendor \
     vendor.display.config@2.0 \
-    vendor.qti.hardware.display.allocator@1.0-service
+    vendor.qti.hardware.display.allocator@1.0-service \
+    android.hardware.graphics.allocator@3.0-impl \
+    android.hardware.graphics.allocator@4.0-impl \
+    android.hardware.graphics.composer@2.3-service:64 \
+    android.hardware.graphics.mapper@2.0-impl-qti-display
 
 # DRM
 PRODUCT_PACKAGES += \

@@ -1,0 +1,2 @@
+#allow cnd find vendor.qti.hardware.mwqemadapter::IMwqemAdapter 
+add_hwservice(cnd, hal_mwqemadapter_hwservice)

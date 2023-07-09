@@ -63,6 +63,7 @@ public:
     Return<RequestStatus> authenticate(uint64_t operationId, uint32_t gid) override;
 
 private:
+    std::mutex mClientCallbackMutex;
     sp<vendor::oppo::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint> mOppoBiometricsFingerprint;
     sp<OppoClientCallback> mOppoClientCallback;
     static Return<RequestStatus> OppoToAOSPRequestStatus(vendor::oppo::hardware::biometrics::fingerprint::V2_1::RequestStatus req);

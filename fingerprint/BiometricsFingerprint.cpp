@@ -155,6 +155,7 @@ private:
 
 Return<uint64_t> BiometricsFingerprint::setNotify(
         const sp<IBiometricsFingerprintClientCallback>& clientCallback) {
+    std::lock_guard<std::mutex> lock(mClientCallbackMutex);
     ALOGE("setNotify");
     mOppoClientCallback = new OppoClientCallback(clientCallback);
     return mOppoBiometricsFingerprint->setNotify(mOppoClientCallback);

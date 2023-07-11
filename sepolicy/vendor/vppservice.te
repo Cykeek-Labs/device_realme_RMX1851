@@ -1,1 +1,4 @@
+allow vendor_vppservice hal_capabilityconfigstore_qti_hwservice:hwservice_manager { find };
+allow vendor_vppservice default_android_hwservice:hwservice_manager { add };
+
 r_dir_file(vendor_vppservice, public_adsprpcd_file)

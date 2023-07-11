@@ -1,4 +1,2 @@
-allow network_stack proc_net:file { read };
-allow network_stack proc_net:file { read open };
-allow network_stack proc_net:file { getattr };
+allow network_stack proc_net:file { read open getattr };
 allow network_stack fs_bpf:file { read write };

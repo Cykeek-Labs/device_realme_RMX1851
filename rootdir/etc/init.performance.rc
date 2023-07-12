@@ -14,12 +14,12 @@ on property:perf_profile=0
     write /dev/stune/top-app/schedtune.boost 0
 
     write /sys/module/cpu_boost/parameters/input_boost_freq "0:1612800 6:1132800"
-    write /sys/module/cpu_boost/parameters/input_boost_ms 500
+    write /sys/module/cpu_boost/parameters/input_boost_ms 1000
 
-    write /sys/class/kgsl/kgsl-3d0/devfreq/min_freq 180000000
+    write /sys/class/kgsl/kgsl-3d0/devfreq/min_freq 504000000
     write /sys/class/kgsl/kgsl-3d0/devfreq/max_freq 504000000
-    write /sys/class/kgsl/kgsl-3d0/min_pwrlevel 3
-    write /sys/class/kgsl/kgsl-3d0/dev_freq/governor cpufreq
+    write /sys/class/kgsl/kgsl-3d0/min_pwrlevel 4
+    write /sys/class/kgsl/kgsl-3d0/dev_freq/governor msm-adreno-tz
 
     write /proc/sys/kernel/sched_downmigrate "78"
     write /proc/sys/kernel/sched_upmigrate "93"

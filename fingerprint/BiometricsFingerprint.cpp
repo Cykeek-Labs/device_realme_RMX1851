@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 #define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.RMX1851"
-#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.1-service.RMX1851"
 
 #include <hardware/hardware.h>
 #include <hardware/fingerprint.h>

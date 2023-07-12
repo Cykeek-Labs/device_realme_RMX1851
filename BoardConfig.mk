@@ -172,6 +172,9 @@ include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/tracking_denials
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+# SurfaceFlinger
+TARGET_USE_AOSP_SURFACEFLINGER := true
+
 # System-as-root
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 TARGET_DISABLE_POSTRENDER_CLEANUP := true

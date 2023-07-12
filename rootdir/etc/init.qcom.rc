@@ -625,10 +625,11 @@ service charger /system/bin/charger
     seclabel u:r:charger:s0
 
 service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance.conf
+    socket msm_irqbalance seqpacket 660 root system
     class core
     user root
     group root
-    disabled
+    task_profiles ServiceCapacityLow
 
 on property:vendor.display.lcd_density=*
     setprop ro.sf.lcd_density ${vendor.display.lcd_density}

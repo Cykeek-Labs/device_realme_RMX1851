@@ -29,9 +29,10 @@ vendor/lib64/libadsprpc.so
 vendor/lib64/libfastrpc_utf_stub.so
 vendor/lib64/libmdsprpc.so
 
-# ADSP modules - from RMX1851EX_11_C.15
+# ADSP modules - from RMX1851EX_11_C.18
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|2c5501568cfeebeed2d37af73909898085c52ad6
 vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|04c53116faed9592573f1dd388935e72724feb5f
+vendor/lib/rfsa/adsp/dirac-capiv2-game.so|697bc59ebbdc7182aa39164b887bedf7cc57abc4
 vendor/lib/rfsa/adsp/dirac-capiv2.so|7f0bd5401b9598e7cbe8e267e60850ea941c6e2a
 vendor/lib/rfsa/adsp/dirac_resource.dar|cff2b434c8594b13bfcb8e8416b6bada58799d16
 vendor/lib/rfsa/adsp/dirac_resource_game.dar|606b88d6ff18be0aea03c2350aa43cf33030cabb

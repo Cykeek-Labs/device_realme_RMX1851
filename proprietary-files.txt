@@ -1236,11 +1236,11 @@ vendor/lib64/libthermalclient.so|11f008e2a8fe51ca67637e7aaeefaf7f276a882c
 vendor/lib/hw/thermal.sdm710.so|8d5752bce452f334a2b8a974e119121a5762988a
 vendor/lib64/hw/thermal.sdm710.so|fc2e176e2ac4a5e93c28978ac84f80c14440517f
 
-# Time services
--vendor/app/TimeService/TimeService.apk
-vendor/bin/time_daemon
-vendor/etc/init/init.time_daemon.rc
-vendor/lib64/libtime_genoff.so
+# Time services - from RMX1851EX_11_C.18
+-vendor/app/TimeService/TimeService.apk|39cff72c1fd6bfdb06f3ee7d7db8dbdf5ce122b8
+vendor/bin/time_daemon|b5611ebd88b6a9b2e206fb9e9eaf17ba3724a2d8
+vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
+vendor/lib64/libtime_genoff.so|34e97baaa5993b2369e67654363487ca79e45a81
 
 # Touchpanel firmware
 odm/firmware/tp/18621/FW_OPPO_TP_NOFLASH_DSJM.img:vendor/firmware/tp/18621/FW_HX_NF83112A_DSJM.img

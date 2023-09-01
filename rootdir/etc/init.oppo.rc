@@ -44,3 +44,8 @@ on init
     # OTG
     chown system system /sys/class/power_supply/usb/otg_switch
     chmod 0664 /sys/class/power_supply/usb/otg_switch
+
+    # Allow system processes to read / write power state.
+    chown system system /sys/power/state
+    chown system system /sys/power/wakeup_count
+    chmod 0660 /sys/power/state

@@ -134,7 +134,6 @@ debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
 debug.cpurend.vsync=true
 ro.config.avoid_gfx_accel=true
-debug.sf.enable_egl_image_tracker=1
 
 # IMS
 persist.vendor.ims.disableADBLogs=1

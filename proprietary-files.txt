@@ -121,7 +121,7 @@ vendor/lib/vendor.oppo.hardware.ktv@1.0.so|55229e016071e85e97489d772c31ae754de84
 vendor/lib64/hw/vendor.oppo.hardware.ktv@1.0-impl.so|c587f9a296cc2a083fa488282a206e97fcaecca2
 vendor/lib64/vendor.oppo.hardware.ktv@1.0.so|35e52db5e583180489c88a94e7ac119cb3216ab4
 
-# Bluetooth - from RMX1851EX_11_C.15
+# Bluetooth - from RMX1851EX_11_C.18
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|3f90eadbbb611fc553fca41c9b789e51ba3a9960
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|1a3742291766b8822618aa8d68b48d55168401fa
@@ -131,7 +131,7 @@ vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|c73850555462df00f41d2
 vendor/lib64/libbt-hidlclient.so|149e5d023c1aa194c8edbb96947a3465e20199a5
 vendor/lib64/libbtnv.so|b427132f5f1d7ab72dd8e07efe37c3c5ed01e0a3
 
-# Bluetooth (A2DP) - from RMX1851EX_11_C.15
+# Bluetooth (A2DP) - from RMX1851EX_11_C.18
 vendor/lib/btaudio_offload_if.so|9a63108ebf7c6a0ff9b4c9df5b192cd0bba9a38f
 vendor/lib/hw/audio.bluetooth_qti.default.so|04f4457fe34ec76f17cba67622b882cfc2d1e5f1
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|123e291be3141040c206efb22befe05339806cf4
@@ -141,47 +141,27 @@ vendor/lib64/hw/audio.bluetooth_qti.default.so|e30f8a19da414d8539955edee2adabc6f
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|818611b7c5b563c0359749cfcb8dd78575939c20
 vendor/lib64/libbluetooth_audio_session_qti.so|a794f1d404fb8a60f16969c234e624c5d13133bd
 
-# Bluetooth (aptX) - from RMX1851EX_11_C.15
+# Bluetooth (aptX) - from RMX1851EX_11_C.18
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|2c5501568cfeebeed2d37af73909898085c52ad6
 vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|04c53116faed9592573f1dd388935e72724feb5f
 
-# Bluetooth (Configstore) - from RMX1851EX_11_C.15
+# Bluetooth (Configstore) - from RMX1851EX_11_C.18
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|18c77d3680aac7f7ad512ba528506444be140170
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|4995571288da93036acbab6d052ec3dbeb90641d
 
-# Bluetooth (SAR) - from RMX1851EX_11_C.15
+# Bluetooth (SAR) - from RMX1851EX_11_C.18
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|6f9f0f1a9bbd14682caf825844cf652adb7b8f4b
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|fabaa1cae55bad3beac54183848947da5e35d53d
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|384b6ceca9703c6f2fee5edc21947fdd6fdcc8d1
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|f633dc95faae8322c5f52a13caa4560bbb3b9930
 
-# Bluetooth (aptX)
-vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
-vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
-
-# Bluetooth (A2DP)
-vendor/lib/btaudio_offload_if.so
-vendor/lib/hw/audio.bluetooth_qti.default.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
-vendor/lib/libbluetooth_audio_session_qti.so
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
-vendor/lib64/btaudio_offload_if.so
-vendor/lib64/hw/audio.bluetooth_qti.default.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
-vendor/lib64/libbluetooth_audio_session_qti.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
-
-# Bluetooth (Oppo A2DP) - from RMX1851EX_11_C.15
+# Bluetooth (Oppo A2DP) - from RMX1851EX_11_C.18
 vendor/lib/hw/vendor.oppo.hardware.bluetooth_audio@1.0-impl.so|cc7694e982f7c1dc0a9fd6b2a7ea4777d31e8218
 vendor/lib/vendor.oppo.hardware.bluetooth_audio@1.0.so|c4d44a1db85c15b8b96b0b64dbb39cad4fad8021
 vendor/lib64/hw/vendor.oppo.hardware.bluetooth_audio@1.0-impl.so|e11a8df17d11159c5a5d7eadf3333170cb1bf95f
 vendor/lib64/vendor.oppo.hardware.bluetooth_audio@1.0.so|b5893f2494cadffa0406ad6ea6062ff84106cf5b
 
-# Bluetooth (shared dependencies) - from RMX1851EX_11_C.15
+# Bluetooth (shared dependencies) - from RMX1851EX_11_C.18
 vendor/lib/com.qualcomm.qti.ant@1.0.so|0b79fab0034e5a7729acae0234f2922db3efc9b8
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|7047ae2e6c796291b4c921bfdd45bce8a04a9ff0
 

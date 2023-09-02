@@ -1205,10 +1205,9 @@ vendor/lib64/libscvePanorama_lite.so|c49017ad2072037480dbb61895b2d66aadf4e8a0
 vendor/bin/ssr_setup
 vendor/bin/subsystem_ramdump
 
-# Thermal engine
-vendor/bin/thermal-engine
-vendor/etc/init/init_thermal-engine.rc
-vendor/etc/thermal-engine.conf
+# Thermal engine - from RMX1851EX_11_C.18
+vendor/bin/thermal-engine|19b14d28d2f8b470c9f71295ce505eee7e29b48c
+vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
 vendor/lib/libthermalclient.so|900a957e542c2dfeee572418eff24f32dfdce818
 vendor/lib64/libthermalclient.so|11f008e2a8fe51ca67637e7aaeefaf7f276a882c
 

@@ -132,6 +132,14 @@ persist.vendor.dpmhalservice.enable=1
 # DRM
 drm.service.enabled=true
 
+# FM
+ro.vendor.fm.use_audio_session=true
+vendor.hw.fm.init=0
+
+# Fling
+ro.min.fling_velocity=70 
+ro.max.fling_velocity=21000
+
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 

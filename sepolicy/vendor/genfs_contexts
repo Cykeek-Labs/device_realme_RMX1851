@@ -10,6 +10,12 @@ genfscon proc /fp_id                                                       u:obj
 # Flash
 genfscon proc /qcom_flash                                                  u:object_r:cam_proc:s0
 
+# Graphics
+genfscon sysfs /sys/devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon0/name u:object_r:sysfs_graphics:s0
+genfscon sysfs /sys/devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon1/name u:object_r:sysfs_graphics:s0
+genfscon sysfs /sys/devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon2/name u:object_r:sysfs_graphics:s0
+genfscon sysfs /sys/devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon3/name u:object_r:sysfs_graphics:s0
+
 # kmsg
 genfscon proc /last_kmsg                                                   u:object_r:proc_last_kmsg:s0
 

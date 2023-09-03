@@ -206,7 +206,7 @@ TapSlop=1px
 
 # USB
 vendor.usb.controller=a600000.dwc3
-vendor.usb.product_string=Realmeme 3 Pro
+vendor.usb.product_string=Realme 3 Pro
 
 # Zygote
 zygote.critical_window.minute=10

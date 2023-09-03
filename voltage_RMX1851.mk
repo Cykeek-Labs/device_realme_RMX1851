@@ -13,7 +13,7 @@ $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 PRODUCT_NAME := voltage_RMX1851
 PRODUCT_DEVICE := RMX1851
 PRODUCT_BRAND := Realme
-PRODUCT_MODEL := realme 3 Pro
+PRODUCT_MODEL := Realme 3 Pro
 PRODUCT_MANUFACTURER := Realme
 
 # disable/enable blur support, default is false

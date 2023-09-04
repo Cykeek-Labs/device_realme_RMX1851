@@ -33,9 +33,6 @@ SYSTEMUI_OPTIMIZE_JAVA := true
 #Dex
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
-# Dynamic props
-include $(LOCAL_PATH)/default.mk
-
 # FM
 PRODUCT_PACKAGES += \
     FM2 \

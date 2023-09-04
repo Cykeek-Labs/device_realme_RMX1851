@@ -49,6 +49,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
+    FlashOverlay \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-voltage
 

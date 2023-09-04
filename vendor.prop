@@ -61,7 +61,7 @@ ro.launcher.blur.appLaunch=0
 # Camera
 persist.camera.light_ae.enable=1
 persist.vendor.camera.dualcamera_bokeh=1
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap,com.voltage.flash
 persist.vendor.camera.perflock.enable=0
 persist.vendor.camera.is_type=4
 

@@ -37,4 +37,7 @@
 
     <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
     <string name="def_device_name_simple">Realme 3 Pro</string>
+
+    <!-- Default state of tap to wake -->
+    <bool name="def_double_tap_to_wake">true</bool>
 </resources>

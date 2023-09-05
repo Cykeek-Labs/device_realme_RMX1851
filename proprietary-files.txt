@@ -107,6 +107,9 @@ vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libshoebox.so
+-vendor/lib/soundfx/libswvqe.so
+-vendor/lib64/soundfx/libswvqe.so
+vendor/lib/libstagefright_soft_qtiflacdec.so
 
 # Audio firmware - from RMX1851EX_11_C.15
 vendor/firmware/tfa98xx_18621.cnt|efa945feb957c32b144e2821f788cb7e48a74a52

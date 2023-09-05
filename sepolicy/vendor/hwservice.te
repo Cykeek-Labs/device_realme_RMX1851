@@ -2,3 +2,6 @@ type hal_cryptoeng_hwservice, hwservice_manager_type;
 type hal_hypnus_hwservice, hwservice_manager_type;
 type hal_oppo_hwservice, hwservice_manager_type;
 type hal_mwqemadapter_hwservice, hwservice_manager_type, protected_hwservice;
+
+# Dolby
+type hal_dms_hwservice, hwservice_manager_type;

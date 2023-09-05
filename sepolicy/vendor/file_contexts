@@ -15,6 +15,9 @@
 /sys/kernel/debug/ion/heaps/ion_mm_heap                                                                 u:object_r:qti_debugfs:s0
 /sys/kernel/debug/(/.*)?                                                                                u:object_r:qti_debugfs:s0
 
+# Dolby
+/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service                                        u:object_r:hal_dms_default_exec:s0
+
 # DSP
 # Hexagon DSP-side executable needed for Halide operation
 # This is labeled as public_adsprpcd_file as it needs to be read by apps

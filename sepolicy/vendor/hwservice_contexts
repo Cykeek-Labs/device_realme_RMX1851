@@ -8,3 +8,4 @@ vendor.oppo.hardware.ktv::IKtv                                               u:o
 vendor.oppo.hardware.radio.opporadio::IOppoRadio                             u:object_r:hal_oppo_hwservice:s0
 vendor.oppo.hardware.radio.oppoappradio::IOppoAppRadio                       u:object_r:hal_oppo_hwservice:s0
 vendor.qti.hardware.mwqemadapter::IMwqemAdapter		                     u:object_r:hal_mwqemadapter_hwservice:s0
+vendor.dolby.hardware.dms::IDms                                              u:object_r:hal_dms_hwservice:s0

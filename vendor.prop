@@ -187,6 +187,14 @@ persist.sys.fflag.override.settings_provider_model=false
 ro.soc.manufacturer=QTI
 ro.soc.model=SDM710
 
+# Surface Flinger (Google)
+debug.sf.late.sf.duration=10500000
+debug.sf.late.app.duration=16600000
+debug.sf.early.sf.duration=16600000
+debug.sf.early.app.duration=16600000
+debug.sf.earlyGl.sf.duration=16600000
+debug.sf.earlyGl.app.duration=16600000
+
 # System
 persist.sys.binary_xml=false
 

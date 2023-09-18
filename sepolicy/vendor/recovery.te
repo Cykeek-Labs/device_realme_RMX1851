@@ -1,1 +1,7 @@
+allow recovery proc_kmsg:file { read open };
+allow recovery self:capability2 { syslog };
+allow recovery kernel:system { syslog_mod };
+allow recovery vfat:dir { write add_name };
+allow recovery vfat:file { create read write open };
+
 allow recovery pstorefs:dir r_dir_perms;

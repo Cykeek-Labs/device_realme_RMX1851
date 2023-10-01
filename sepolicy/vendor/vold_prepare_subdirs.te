@@ -1,1 +1,1 @@
-allow vold_prepare_subdirs self:capability { fsetid };
+allow vold_prepare_subdirs self:capability { fsetid sys_admin };

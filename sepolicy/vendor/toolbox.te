@@ -1,1 +1,1 @@
-allow toolbox self:capability { kill };
+allow toolbox self:capability { sys_admin kill };

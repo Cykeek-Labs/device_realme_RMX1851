@@ -2,6 +2,7 @@ allow hal_perf_default proc_sched:file rw_file_perms;
 allow hal_perf_default proc_meminfo:file r_file_perms;
 allow hal_perf_default sysfs_kgsl:dir search;
 allow hal_perf_default hal_display_config_hwservice:hwservice_manager { find };
+allow hal_perf_default self:capability { sys_admin };
 
 binder_call(hal_perf_default, hal_graphics_composer_default);
 allow hal_perf_default init:unix_stream_socket connectto;

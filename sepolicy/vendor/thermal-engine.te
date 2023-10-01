@@ -1,3 +1,4 @@
+allow thermal-engine self:capability { sys_admin };
 dontaudit thermal-engine sysfs:dir r_dir_perms;
 
 allow thermal-engine sysfs_devfreq:dir { search read open };

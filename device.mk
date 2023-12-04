@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Realme 5 Pro is a product launched with pie
+# Realme 3 Pro is a product launched with pie
 $(call inherit-product, build/make/target/product/product_launched_with_p.mk)
 
 # Inherit from those products. Most specific first.
@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/realme/RMX1971/RMX1971-vendor.mk)
+$(call inherit-product, vendor/realme/RMX1851/RMX1851-vendor.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -166,7 +166,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.RMX1971 \
+    android.hardware.biometrics.fingerprint@2.1-service.RMX1851 \
     vendor.oppo.hardware.biometrics.fingerprint@2.1
 
 # Gatekeeper
@@ -438,7 +438,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.0-service.multihal.RMX1971 \
+    android.hardware.sensors@2.0-service.multihal.RMX1851 \
     android.frameworks.sensorservice@1.0 \
     android.frameworks.sensorservice@1.0.vendor \
     libsensorndkbridge

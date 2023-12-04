@@ -14,7 +14,7 @@
 // limitations under the License.
 
 cc_binary {
-    name: "android.hardware.sensors@2.0-service.multihal.RMX1971",
+    name: "android.hardware.sensors@2.0-service.multihal.RMX1851",
     stem: "android.hardware.sensors@2.0-service.multihal",
     defaults: [
         "hidl_defaults",

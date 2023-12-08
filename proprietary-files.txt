@@ -515,8 +515,6 @@ vendor/bin/hvdcp_opti
 
 # Charger Firmware
 odm/firmware/fastchg/18621/oplus_vooc_fw.bin
-odm/firmware/fastchg/19691/oplus_vooc_fw.bin
-odm/firmware/fastchg/19691/oplus_vooc_fw_n76e.bin
 
 # CNE
 vendor/app/CneApp/CneApp.apk

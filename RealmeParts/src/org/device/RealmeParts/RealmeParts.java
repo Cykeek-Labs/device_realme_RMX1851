@@ -46,7 +46,6 @@ import androidx.preference.TwoStatePreference;
 
 
 import org.device.RealmeParts.ModeSwitch.GameModeSwitch;
-import org.device.RealmeParts.Touch.ScreenOffGestureSettings;
 import org.device.RealmeParts.audio.SoundControlSettingsActivity;
 import org.device.RealmeParts.kcal.DisplayCalibration;
 import org.device.RealmeParts.preferences.CustomSeekBarPreference;
@@ -59,22 +58,14 @@ public class RealmeParts extends PreferenceFragment
 
     private static final String KEY_CATEGORY_GRAPHICS = "graphics";
 
-    public static final String KEY_HBM_SWITCH = "hbm";
-    public static final String KEY_HBM_AUTOBRIGHTNESS_SWITCH = "hbm_autobrightness";
-    public static final String KEY_HBM_AUTOBRIGHTNESS_THRESHOLD = "hbm_autobrightness_threshould";
-    public static final String KEY_DC_SWITCH = "dc";
     public static final String KEY_OTG_SWITCH = "otg";
     public static final String KEY_GAME_SWITCH = "game";
     public static final String TP_LIMIT_ENABLE = "/proc/touchpanel/oplus_tp_limit_enable";
     public static final String TP_DIRECTION = "/proc/touchpanel/oplus_tp_direction";
 
     public static final String KEY_SETTINGS_PREFIX = "RealmeParts";
-    private static TwoStatePreference mHBMModeSwitch;
-    private static TwoStatePreference mHBMAutobrightnessSwitch;
-    private static TwoStatePreference mDCModeSwitch;
     private static TwoStatePreference mOTGModeSwitch;
     private static TwoStatePreference mGameModeSwitch;
-    private Preference mGesturesPref;
     private Preference mKcalPref;
     private Preference mAudioPref;
 
@@ -82,19 +73,6 @@ public class RealmeParts extends PreferenceFragment
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this.getContext());
         addPreferencesFromResource(R.xml.Realme_preferences);
-
-        mDCModeSwitch = (TwoStatePreference) findPreference(KEY_DC_SWITCH);
-        mDCModeSwitch.setEnabled(DCModeSwitch.isSupported());
-        mDCModeSwitch.setChecked(DCModeSwitch.isCurrentlyEnabled(this.getContext()));
-        mDCModeSwitch.setOnPreferenceChangeListener(new DCModeSwitch());
-
-        mHBMModeSwitch = (TwoStatePreference) findPreference(KEY_HBM_SWITCH);
-        mHBMModeSwitch.setEnabled(HBMModeSwitch.isSupported());
-        mHBMModeSwitch.setChecked(HBMModeSwitch.isCurrentlyEnabled(this.getContext()));
-        mHBMModeSwitch.setOnPreferenceChangeListener(new HBMModeSwitch());
-        mHBMAutobrightnessSwitch = (TwoStatePreference) findPreference(KEY_HBM_AUTOBRIGHTNESS_SWITCH);
-        mHBMAutobrightnessSwitch.setChecked(PreferenceManager.getDefaultSharedPreferences(getContext()).getBoolean(RealmeParts.KEY_HBM_AUTOBRIGHTNESS_SWITCH, false));
-        mHBMAutobrightnessSwitch.setOnPreferenceChangeListener(this);
 
         mOTGModeSwitch = (TwoStatePreference) findPreference(KEY_OTG_SWITCH);
         mOTGModeSwitch.setEnabled(OTGModeSwitch.isSupported());
@@ -105,16 +83,6 @@ public class RealmeParts extends PreferenceFragment
         mGameModeSwitch.setEnabled(GameModeSwitch.isSupported());
         mGameModeSwitch.setChecked(GameModeSwitch.isCurrentlyEnabled(this.getContext()));
         mGameModeSwitch.setOnPreferenceChangeListener(new GameModeSwitch());
-
-        mGesturesPref = findPreference("screen_gestures");
-                mGesturesPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-                     @Override
-                     public boolean onPreferenceClick(Preference preference) {
-                         Intent intent = new Intent(getContext(), ScreenOffGestureSettings.class);
-                         startActivity(intent);
-                         return true;
-                     }
-                });
 
         mKcalPref = findPreference("kcal");
                 mKcalPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
@@ -136,30 +104,29 @@ public class RealmeParts extends PreferenceFragment
                      }
                 });
     }
+// ... (previous code)
 
-    @Override
-    public boolean onPreferenceChange(Preference preference, Object value) {
-        final String key = preference.getKey();
-        if (preference == mHBMAutobrightnessSwitch) {
-                    Boolean enabled = (Boolean) value;
-                    SharedPreferences.Editor prefChange = PreferenceManager.getDefaultSharedPreferences(getContext()).edit();
-                    prefChange.putBoolean(KEY_HBM_AUTOBRIGHTNESS_SWITCH, enabled).commit();
-                    Startup.enableService(getContext());
-                }
+@Override
+public boolean onPreferenceChange(Preference preference, Object value) {
+    final String key = preference.getKey();
+    // ... (existing onPreferenceChange code)
+
+    return true;
+}
+
+private boolean isAppNotInstalled(String uri) {
+    PackageManager packageManager = getContext().getPackageManager();
+    try {
+        packageManager.getPackageInfo(uri, PackageManager.GET_ACTIVITIES);
+        return false;
+    } catch (PackageManager.NameNotFoundException e) {
         return true;
     }
-
-    public static boolean isHBMAutobrightnessEnabled(Context context) {
-        return PreferenceManager.getDefaultSharedPreferences(context).getBoolean(RealmeParts.KEY_HBM_AUTOBRIGHTNESS_SWITCH, false);
-    }
-
-    private boolean isAppNotInstalled(String uri) {
-        PackageManager packageManager = getContext().getPackageManager();
-        try {
-            packageManager.getPackageInfo(uri, PackageManager.GET_ACTIVITIES);
-            return false;
-        } catch (PackageManager.NameNotFoundException e) {
-            return true;
-        }
-    }
 }
+
+// Add this closing brace to properly close the RealmeParts class
+}
+
+// Make sure there is no extra closing brace beyond this point
+
+  

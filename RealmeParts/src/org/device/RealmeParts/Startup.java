@@ -28,8 +28,6 @@ import android.os.RemoteException;
 import android.os.UserHandle;
 import androidx.preference.PreferenceManager;
 import org.device.RealmeParts.ModeSwitch.GameModeSwitch;
-import org.device.RealmeParts.Touch.util.Utils;
-import org.device.RealmeParts.Touch.ScreenOffGesture;
 import org.device.RealmeParts.audio.SoundControlSettings;
 import org.device.RealmeParts.audio.SoundControlFileUtils;
 import org.device.RealmeParts.kcal.KcalService;
@@ -38,7 +36,6 @@ import org.device.RealmeParts.vibrator.utils.VibrateFileUtils;
 
 public class Startup extends BroadcastReceiver {
 
-    private boolean mHBM = false;
     private static final String TAG = "BootReceiver";
     private static final String ONE_TIME_TUNABLE_RESTORE = "hardware_tunable_restored";
     private static boolean mServiceEnabled = false;
@@ -66,26 +63,10 @@ public class Startup extends BroadcastReceiver {
         enabled = sharedPrefs.getBoolean (RealmeParts.KEY_GAME_SWITCH, false);
         restore (GameModeSwitch.getFile ( ), enabled);
 
-        enableComponent(context, ScreenOffGesture.class.getName());
-        SharedPreferences screenOffGestureSharedPreferences = context.getSharedPreferences(
-                Utils.PREFERENCES, Activity.MODE_PRIVATE);
-        KernelControl.enableGestures(
-                screenOffGestureSharedPreferences.getBoolean(
-                        ScreenOffGesture.PREF_GESTURE_ENABLE, false));
-        KernelControl.enableDt2w(
-                screenOffGestureSharedPreferences.getBoolean(
-                        ScreenOffGesture.PREF_DT2W_ENABLE, true));
-
         Intent kcalIntent  = new Intent(context , KcalService.class);
         context.startService(kcalIntent);
-
-        enabled = sharedPrefs.getBoolean(RealmeParts.KEY_DC_SWITCH, false);
-        restore(DCModeSwitch.getFile(), enabled);
-        enabled = sharedPrefs.getBoolean(RealmeParts.KEY_HBM_SWITCH, false);
-        restore(HBMModeSwitch.getFile(), enabled);
         enabled = sharedPrefs.getBoolean(RealmeParts.KEY_OTG_SWITCH, false);
         restore(OTGModeSwitch.getFile(), enabled);
-        enableService(context);
 
         int gain = Settings.Secure.getInt(context.getContentResolver(),
                 SoundControlSettings.PREF_HEADPHONE_GAIN, 4);
@@ -113,24 +94,4 @@ public class Startup extends BroadcastReceiver {
         preferences.edit().putBoolean(ONE_TIME_TUNABLE_RESTORE, true).apply();
 
         }
-
-    private static void startService(Context context) {
-        context.startServiceAsUser(new Intent(context, AutoHighBrightnessModeService.class),
-                UserHandle.CURRENT);
-        mServiceEnabled = true;
-    }
-
-    private static void stopService(Context context) {
-        mServiceEnabled = false;
-        context.stopServiceAsUser(new Intent(context, AutoHighBrightnessModeService.class),
-                UserHandle.CURRENT);
-    }
-
-    public static void enableService(Context context) {
-        if (RealmeParts.isHBMAutobrightnessEnabled(context) && !mServiceEnabled) {
-            startService(context);
-        } else if (!RealmeParts.isHBMAutobrightnessEnabled(context) && mServiceEnabled) {
-            stopService(context);
-        }
-    }
     }

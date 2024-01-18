@@ -732,6 +732,10 @@ on property:sys.boot_completed=1
 
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
+    
+on property:sys.boot_completed=1
+    start iorapd
+    start iorap.cmd.compiler
 
 service qvop-daemon /vendor/bin/qvop-daemon
     class late_start

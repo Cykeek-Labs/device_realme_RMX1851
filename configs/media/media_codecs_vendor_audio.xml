@@ -23,6 +23,7 @@
         <!-- Wuhan@MULTIMEDIA.MEDIASERVER.PLAYER.233011, 2020/09/03, -->
         <!-- add for using OMX decoder for audio/raw since c2 decoder doesn't support 24/32 bit -->
         <MediaCodec name="OMX.google.raw.decoder" type="audio/raw" update="true" rank="1"/>
+        <MediaCodec name="OMX.google.aac.decoder" type="audio/aac" update="true" rank="1"/>
         <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
         <!-- SimpleOMXComponet based software decoder-->
     </Decoders>

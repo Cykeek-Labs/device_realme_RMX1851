@@ -1,14 +1,15 @@
 #
-# Copyright (C) 2021-2022 The LineageOS Project
+# Copyright (C) 2021-2022 The bananaOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Lineage stuff
+# Inherit some common banana stuff
+BANANA_MAINTAINER := Rishi
+TARGET_ENABLE_BLUR := false
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_NOT_USES_BLUR := true
 
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/banana/config/common.mk)
 
 # Inherit from RMX1851 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -16,7 +17,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1851
 PRODUCT_MANUFACTURER := realme
-PRODUCT_NAME := lineage_RMX1851
+PRODUCT_NAME := banana_RMX1851
 PRODUCT_MODEL := RMX1851
 
 PRODUCT_SYSTEM_NAME := RMX1851

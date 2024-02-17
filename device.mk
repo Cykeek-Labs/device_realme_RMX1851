@@ -476,6 +476,14 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf::$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+    
+# Shipping RUI2 firmware
+FW_DIR := vendor/realme/RMX1851-fw
+ifeq (,$(wildcard $(FW_DIR)))
+else
+    FW_FILES := $(wildcard $(FW_DIR)/*)
+    PRODUCT_COPY_FILES += $(foreach file,$(FW_FILES),$(file):install/firmware-update/$(notdir $(file)))
+endif
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \

@@ -208,10 +208,6 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
-# Call recording
-PRODUCT_PACKAGES += \
-    com.google.android.apps.dialer.call_recording_audio.features.xml
-
 # Context Hub
 PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0-impl.generic \

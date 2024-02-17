@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_RMX1851.mk
+    $(LOCAL_DIR)/arrow_RMX1851.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_RMX1851-user \
-    derp_RMX1851-userdebug \
-    derp_RMX1851-eng
+    arrow_RMX1851-user \
+    arrow_RMX1851-userdebug \
+    arrow_RMX1851-eng
